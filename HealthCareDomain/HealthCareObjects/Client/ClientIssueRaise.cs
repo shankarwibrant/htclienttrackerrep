@@ -10,6 +10,7 @@ namespace HealthCareObjects.Client
     {
         #region PrivateMember
         private Int64 _issueID;
+        
         private Int64 _issuedBy;
         private string _departmentID;
         private string _departmentName;
@@ -22,6 +23,7 @@ namespace HealthCareObjects.Client
         private string _companyName;
         private Int64 _activeflage;
         private DateTime? _issueDate;
+        private Int64 _git;
         private Int64 _totalRecords;
         private string _FullName;
         private string _cIssueID;
