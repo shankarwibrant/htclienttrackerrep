@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9084/ClientIssueRaiseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" />
+  <xs:element name="Create">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="IssueDetails" nillable="true" type="q1:ClientIssueRaise" />
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="Fileupload" nillable="true" type="q2:ArrayOfFileUpload" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="DelListobj" nillable="true" type="q3:ArrayOfFileUpload" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateResult" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIssueRaiseById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="Dltproperty" nillable="true" type="q4:ClientIssueRaise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteIssueRaiseByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteIssueRaiseByIdResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMainpage">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageNO" type="xs:int" />
+        <xs:element minOccurs="0" name="RowperPage" type="xs:int" />
+        <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+        <xs:element minOccurs="0" name="UserID" type="xs:int" />
+        <xs:element minOccurs="0" name="searchText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMainpageResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListMainpageResult" nillable="true" type="q5:ArrayOfClientIssueRaise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="clientList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="clientListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="clientListResult" nillable="true" type="q6:ArrayOfClientIssueRaise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIssueEntrys">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="idString" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objissuedtllist" nillable="true" type="q7:ClientIssueRaiseDtl" />
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objFileUpload" nillable="true" type="q8:ArrayOfFileUpload" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateIssueEntrysResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="UpdateIssueEntrysResult" nillable="true" type="q9:ClientIssueRaiseDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveRecord">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objissueDtl" nillable="true" type="q10:ArrayOfClientIssueRaiseDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="SaveRecordResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="SaveRecordResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFileById">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IssueDetailID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetAllFileByIdResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="GetAllFileByIdResult" nillable="true" type="q11:ArrayOfFileUpload" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListByDtLID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="IssueID" type="xs:long" />
+        <xs:element minOccurs="0" name="sNo" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListByDtLIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListByDtLIDResult" nillable="true" type="q12:ArrayOfClientIssueRaiseDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AutoIDResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListDepartmentName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListDepartmentNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListDepartmentNameResult" nillable="true" type="q13:ArrayOfDepartment" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListModuleName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListModuleNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListModuleNameResult" nillable="true" type="q14:ArrayOfClientInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListFormName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ModuleID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListFormNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListFormNameResult" nillable="true" type="q15:ArrayOfClientIssueRaiseDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCompltIssueNo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListCompltIssueNoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListCompltIssueNoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListFeatureName">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FormID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListFeatureNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListFeatureNameResult" nillable="true" type="q16:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListIssueDate">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListIssueDateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListIssueDateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoIDSelf">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoIDSelfResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AutoIDSelfResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PastIssueSearch">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="clientId" type="xs:long" />
+        <xs:element minOccurs="0" name="moduleId" type="xs:long" />
+        <xs:element minOccurs="0" name="formId" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="PastIssueSearchResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="PastIssueSearchResult" nillable="true" type="q17:ArrayOfClientIssueRaiseDtl" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileuploadSer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="FileuploadSerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FileuploadSerResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

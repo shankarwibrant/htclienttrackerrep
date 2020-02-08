@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfFeature">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Feature" nillable="true" type="tns:Feature" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeature" nillable="true" type="tns:ArrayOfFeature" />
+  <xs:complexType name="Feature">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Autoid" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="F_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="FeatureDtlId" type="xs:long" />
+      <xs:element minOccurs="0" name="FeatureID" type="xs:long" />
+      <xs:element minOccurs="0" name="FeatureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FormID" type="xs:int" />
+      <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SNo" type="xs:long" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Feature" nillable="true" type="tns:Feature" />
+</xs:schema>

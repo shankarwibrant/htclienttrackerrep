@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="7da2419a-db5e-4828-914a-4bdc37000e1c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9084/CompliantApprovalService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CompliantApprovalService.xsd" MetadataType="Schema" ID="e7a1c3ed-e10c-4bf2-95c2-6a0047f08643" SourceId="1" SourceUrl="http://localhost:9084/CompliantApprovalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CompliantApprovalService.wsdl" MetadataType="Wsdl" ID="388b940c-79cd-4fe0-bc66-a699ab3377ce" SourceId="1" SourceUrl="http://localhost:9084/CompliantApprovalService.svc?wsdl" />
+    <MetadataFile FileName="CompliantApprovalService1.xsd" MetadataType="Schema" ID="eb1d6be2-22aa-4686-8504-333d28a1f9a7" SourceId="1" SourceUrl="http://localhost:9084/CompliantApprovalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CompliantApprovalService2.xsd" MetadataType="Schema" ID="de9d2799-7d75-42da-8b8e-471275f9e9a3" SourceId="1" SourceUrl="http://localhost:9084/CompliantApprovalService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ClientIssueRaise">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activeflage" type="xs:long" />
+      <xs:element minOccurs="0" name="AssignedID" type="xs:long" />
+      <xs:element minOccurs="0" name="CIssueID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientAddressID" type="xs:long" />
+      <xs:element minOccurs="0" name="ClientID" type="xs:long" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientNameID" type="xs:long" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompltIssueNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ContactNo" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedDate1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedDate2" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DateofIntialization" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartmentID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EmailId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FeatureID" type="xs:long" />
+      <xs:element minOccurs="0" name="FeatureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="File" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="FileUploadFlag" type="xs:long" />
+      <xs:element minOccurs="0" name="Filecount" type="xs:long" />
+      <xs:element minOccurs="0" name="FormID" type="xs:long" />
+      <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FullName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSave" type="xs:int" />
+      <xs:element minOccurs="0" name="IssueDate" nillable="true" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssueDate1" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssueDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueID" type="xs:long" />
+      <xs:element minOccurs="0" name="IssueSubject" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueTypeID" type="xs:int" />
+      <xs:element minOccurs="0" name="IssueTypeNameId" type="xs:long" />
+      <xs:element minOccurs="0" name="IssuedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="ModuleID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductID" type="xs:long" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SNo" type="xs:long" />
+      <xs:element minOccurs="0" name="SelfAssign" type="xs:int" />
+      <xs:element minOccurs="0" name="SerialNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortNmae" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:long" />
+      <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      <xs:element minOccurs="0" name="fileName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientIssueRaise" nillable="true" type="tns:ClientIssueRaise" />
+  <xs:complexType name="ArrayOfFileUpload">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FileUpload" nillable="true" type="tns:FileUpload" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFileUpload" nillable="true" type="tns:ArrayOfFileUpload" />
+  <xs:complexType name="FileUpload">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ClientID" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="FileContent" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileId" type="xs:long" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileSNo" type="xs:int" />
+      <xs:element minOccurs="0" name="FileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsSave" type="xs:int" />
+      <xs:element minOccurs="0" name="IssueDetailId" type="xs:long" />
+      <xs:element minOccurs="0" name="StringContent" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FileUpload" nillable="true" type="tns:FileUpload" />
+  <xs:complexType name="ArrayOfClientIssueRaise">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientIssueRaise" nillable="true" type="tns:ClientIssueRaise" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientIssueRaise" nillable="true" type="tns:ArrayOfClientIssueRaise" />
+  <xs:complexType name="ClientIssueRaiseDtl">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Aaprovalflag" type="xs:long" />
+      <xs:element minOccurs="0" name="Activeflage" type="xs:long" />
+      <xs:element minOccurs="0" name="AssignedID" type="xs:long" />
+      <xs:element minOccurs="0" name="AssignedTo" type="xs:long" />
+      <xs:element minOccurs="0" name="CilentID" type="xs:long" />
+      <xs:element minOccurs="0" name="ClientName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CompltIssueNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="CreatedName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DueDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="FeatureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileContent" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="FileCount" type="xs:int" />
+      <xs:element minOccurs="0" name="FileId" type="xs:long" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileUploadFlag" type="xs:int" />
+      <xs:element minOccurs="0" name="FormID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueClientID" type="xs:long" />
+      <xs:element minOccurs="0" name="IssueDate1" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="IssueDate2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDescription" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueDetailID" type="xs:long" />
+      <xs:element minOccurs="0" name="IssueID" type="xs:long" />
+      <xs:element minOccurs="0" name="IssueType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IssueTypeId" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PastIssueDetailID" type="xs:long" />
+      <xs:element minOccurs="0" name="Priority" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="xs:long" />
+      <xs:element minOccurs="0" name="SNO" type="xs:long" />
+      <xs:element minOccurs="0" name="SelfAssign" type="xs:int" />
+      <xs:element minOccurs="0" name="closeddate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="closedname" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientIssueRaiseDtl" nillable="true" type="tns:ClientIssueRaiseDtl" />
+  <xs:complexType name="ArrayOfClientIssueRaiseDtl">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientIssueRaiseDtl" nillable="true" type="tns:ClientIssueRaiseDtl" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientIssueRaiseDtl" nillable="true" type="tns:ArrayOfClientIssueRaiseDtl" />
+  <xs:complexType name="ArrayOfDepartment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Department" nillable="true" type="tns:Department" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDepartment" nillable="true" type="tns:ArrayOfDepartment" />
+  <xs:complexType name="Department">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ActiveFlag" type="xs:boolean" />
+      <xs:element minOccurs="0" name="ClientID" type="xs:long" />
+      <xs:element minOccurs="0" name="Count1" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="DepartmentCode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DepartmentID" type="xs:long" />
+      <xs:element minOccurs="0" name="DepartmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DeptDetails" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="RecordNo" type="xs:int" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:int" />
+      <xs:element minOccurs="0" name="Type" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Department" nillable="true" type="tns:Department" />
+  <xs:complexType name="ArrayOfClientInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ClientInformation" nillable="true" type="tns:ClientInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfClientInformation" nillable="true" type="tns:ArrayOfClientInformation" />
+  <xs:complexType name="ClientInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Activeflag" type="xs:int" />
+      <xs:element minOccurs="0" name="Address" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Area" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ChkDescription" type="xs:int" />
+      <xs:element minOccurs="0" name="City" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ClientID" type="xs:long" />
+      <xs:element minOccurs="0" name="ClientUserID" type="xs:long" />
+      <xs:element minOccurs="0" name="CompanyName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CreatedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="CreatedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="Desc" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Email" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="F_id" type="xs:int" />
+      <xs:element minOccurs="0" name="Fax" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FeatureID" type="xs:int" />
+      <xs:element minOccurs="0" name="FormID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Licence" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="LinkForVoIP" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Logo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="MobileNO" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModifiedBy" type="xs:long" />
+      <xs:element minOccurs="0" name="ModifiedDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="ModuleID" type="xs:long" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Phone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Productid" type="xs:long" />
+      <xs:element minOccurs="0" name="Productname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Region" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ShortName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Smcstatus" type="xs:long" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:long" />
+      <xs:element minOccurs="0" name="VPNPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="VPNUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Website" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Zipcode" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="formfeatureid" type="xs:long" />
+      <xs:element minOccurs="0" name="formfeaturename" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ClientInformation" nillable="true" type="tns:ClientInformation" />
+  <xs:complexType name="ArrayOfFeature">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Feature" nillable="true" type="tns:Feature" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFeature" nillable="true" type="tns:ArrayOfFeature" />
+  <xs:complexType name="Feature">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Autoid" type="xs:int" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="F_Id" type="xs:int" />
+      <xs:element minOccurs="0" name="FeatureDtlId" type="xs:long" />
+      <xs:element minOccurs="0" name="FeatureID" type="xs:long" />
+      <xs:element minOccurs="0" name="FeatureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FormID" type="xs:int" />
+      <xs:element minOccurs="0" name="FormName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModuleID" type="xs:int" />
+      <xs:element minOccurs="0" name="ModuleName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="SNo" type="xs:long" />
+      <xs:element minOccurs="0" name="TotalRecords" type="xs:int" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Feature" nillable="true" type="tns:Feature" />
+</xs:schema>

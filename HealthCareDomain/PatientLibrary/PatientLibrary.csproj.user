@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <ReferencePath>D:\VibrantSoftwaresSVN\MainSource\HealthCareWeb\HMS\HealthCareRef\</ReferencePath>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ReferencePath>D:\HmsNewMainSourceRep\HmsNewMainSource\HealthCareWeb\HMS\HealthCareRef\</ReferencePath>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <ReferencePath>D:\SIM\ClientIssueSource\HealthCareMvc5\HealthCareMvc5\HeathCareRef\</ReferencePath>
+    <ProjectView>ProjectFiles</ProjectView>
+  </PropertyGroup>
+</Project>

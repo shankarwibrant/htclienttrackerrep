@@ -1,0 +1,161 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Login</title>
+    <meta name="description" content="description">
+    <meta name="author" content="Evgeniya">
+    <meta name="keyword" content="keywords">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, target-densitydpi=medium-dpi, user-scalable=no" />
+    <!-- Bootstrap 3.3.6 -->
+    <link rel="stylesheet" href="~/Contents/css/LayOut/Bootstrap-Less/bootstrap.min.css">
+    <link href="~/Contents/css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Contents/css/font-awesome-4.7.0/css/font-awesome.css" rel="stylesheet" />
+    <!-- Theme style -->
+    <link rel="stylesheet" href="~/Contents/css/LayOut/AdminLTE.min.css">
+    <style type="text/css">
+        /* CSS Document */
+
+        body {
+            width: 100px;
+            height: 100px;
+            background: -webkit-linear-gradient(90deg, #2e84bd 10%, #4b92b5 90%); /* Chrome 10+, Saf5.1+ */
+            background: -moz-linear-gradient(90deg, #2e84bd 10%, #4b92b5 90%); /* FF3.6+ */
+            background: -ms-linear-gradient(90deg, #2e84bd 10%, #4b92b5 90%); /* IE10 */
+            background: -o-linear-gradient(90deg, #2e84bd 10%, #4b92b5 90%); /* Opera 11.10+ */
+            /*background: linear-gradient(90deg, #2e84bd 10%, #4b92b5 90%); /* W3C */
+            font-family: 'Raleway', sans-serif;*/
+			background: url(../Contents/medical.jpg);
+            font-family: 'Raleway', sans-serif;
+        }
+
+        p {
+            color: #CCC;
+        }
+
+
+
+        .middlePage {
+            /*width: 680px;*/
+            height: 500px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="middlePage">
+        <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-8">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+
+                        <div class="row">
+
+                            <div class="col-md-5">
+                                <div id="image-holder" style="padding-left: 10% !important;padding-right: 4% !important;">
+                                    <img src="~/Contents/logo1.png" style="width:80% !important;height:234px !important; display:block"/>
+                                </div>
+
+                            </div>
+
+                            <div class="col-md-7" style="border-left:1px solid #ccc; padding-top:3% !important">
+                                <div class="well">
+                                    @using (Html.BeginForm("Loginpage", "Login", new { ReturnUrl = ViewBag.ReturnUrl }, FormMethod.Post))
+                                    {
+                                        @Html.AntiForgeryToken()
+                                        <div class="form-group has-feedback">
+                                            <input type="text" id="txtUserName" class="form-control" placeholder="User Name" name="UName" required>
+                                            <span class="fa fa-user form-control-feedback"></span>
+                                        </div>
+                                        <div class="form-group has-feedback">
+                                            <input type="password" class="form-control" placeholder="Password" id="txtPassword" name="Password" required>
+                                            <span class="fa fa-key form-control-feedback"></span>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-8">
+
+                                            </div>
+                                            <!-- /.col -->
+                                            <div class="col-sm-4">
+                                                <button class="btn btn-primary btn-block btn-flat" id="signin">Sign In</button>
+                                            </div>
+                                            <!-- /.col -->
+                                        </div>
+
+                                    }
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-2">
+
+            </div>
+        </div>
+
+
+    </div>
+    <!-- jQuery 3.1.1 -->
+    <script src="~/Contents/js/jQuery/jquery-3.1.1.min.js"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="~/Contents/js/Bootstrap/js/bootstrap.min.js"></script>
+    <!-- Bootstrap Notify -->
+    <script src="~/Contents/js/Bootstrap-Notify/bootstrap-notify.min.js"></script>
+    <script type="text/javascript">
+        function DisableBackButton() {
+
+
+            window.history.forward()
+        }
+        DisableBackButton();
+
+        window.onload = DisableBackButton;
+        window.onpageshow = function (evt) { if (evt.persisted) DisableBackButton() }
+        window.onunload = function () { void (0) }
+        function DisableBackButtonAllBrowsers() {
+
+            window.history.forward()
+        };
+
+        var r = '@ViewData["check"]';
+
+        if (r != "") {
+
+            $.notify({
+                // options
+                message: r
+            }, {
+                // settings
+                type: 'info'
+            }
+            );
+        }
+
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="FormFeatureServices" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9084/FormFeatureServices.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9084/FormFeatureServices.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9084/FormFeatureServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IFormFeatureServices_formfeatureser_InputMessage">
+    <wsdl:part name="parameters" element="tns:formfeatureser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_formfeatureser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:formfeatureserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_formfeaturemodser_InputMessage">
+    <wsdl:part name="parameters" element="tns:formfeaturemodser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_formfeaturemodser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:formfeaturemodserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_formfeatureformser_InputMessage">
+    <wsdl:part name="parameters" element="tns:formfeatureformser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_formfeatureformser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:formfeatureformserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_cmbformser_InputMessage">
+    <wsdl:part name="parameters" element="tns:cmbformser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_cmbformser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:cmbformserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Createser_InputMessage">
+    <wsdl:part name="parameters" element="tns:Createser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Createser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_ListService_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListService" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_ListService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Listchildser_InputMessage">
+    <wsdl:part name="parameters" element="tns:Listchildser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Listchildser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListchildserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Updateser_InputMessage">
+    <wsdl:part name="parameters" element="tns:Updateser" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_Updateser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_DeleteSer_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSer" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_DeleteSer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteSerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_AutoIdSer_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoIdSer" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_AutoIdSer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoIdSerResponse" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_DeleteDtlFeat_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDtlFeat" />
+  </wsdl:message>
+  <wsdl:message name="IFormFeatureServices_DeleteDtlFeat_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteDtlFeatResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IFormFeatureServices">
+    <wsdl:operation name="formfeatureser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeatureser" message="tns:IFormFeatureServices_formfeatureser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeatureserResponse" message="tns:IFormFeatureServices_formfeatureser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="formfeaturemodser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeaturemodser" message="tns:IFormFeatureServices_formfeaturemodser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeaturemodserResponse" message="tns:IFormFeatureServices_formfeaturemodser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="formfeatureformser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeatureformser" message="tns:IFormFeatureServices_formfeatureformser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/formfeatureformserResponse" message="tns:IFormFeatureServices_formfeatureformser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="cmbformser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/cmbformser" message="tns:IFormFeatureServices_cmbformser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/cmbformserResponse" message="tns:IFormFeatureServices_cmbformser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Createser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/Createser" message="tns:IFormFeatureServices_Createser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/CreateserResponse" message="tns:IFormFeatureServices_Createser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/ListService" message="tns:IFormFeatureServices_ListService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/ListServiceResponse" message="tns:IFormFeatureServices_ListService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Listchildser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/Listchildser" message="tns:IFormFeatureServices_Listchildser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/ListchildserResponse" message="tns:IFormFeatureServices_Listchildser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Updateser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/Updateser" message="tns:IFormFeatureServices_Updateser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/UpdateserResponse" message="tns:IFormFeatureServices_Updateser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/DeleteSer" message="tns:IFormFeatureServices_DeleteSer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/DeleteSerResponse" message="tns:IFormFeatureServices_DeleteSer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoIdSer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/AutoIdSer" message="tns:IFormFeatureServices_AutoIdSer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/AutoIdSerResponse" message="tns:IFormFeatureServices_AutoIdSer_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDtlFeat">
+      <wsdl:input wsaw:Action="http://tempuri.org/IFormFeatureServices/DeleteDtlFeat" message="tns:IFormFeatureServices_DeleteDtlFeat_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IFormFeatureServices/DeleteDtlFeatResponse" message="tns:IFormFeatureServices_DeleteDtlFeat_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IFormFeatureServices" type="tns:IFormFeatureServices">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="formfeatureser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/formfeatureser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="formfeaturemodser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/formfeaturemodser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="formfeatureformser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/formfeatureformser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="cmbformser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/cmbformser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Createser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/Createser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListService">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/ListService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Listchildser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/Listchildser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Updateser">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/Updateser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteSer">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/DeleteSer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoIdSer">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/AutoIdSer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteDtlFeat">
+      <soap:operation soapAction="http://tempuri.org/IFormFeatureServices/DeleteDtlFeat" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FormFeatureServices">
+    <wsdl:port name="BasicHttpBinding_IFormFeatureServices" binding="tns:BasicHttpBinding_IFormFeatureServices">
+      <soap:address location="http://localhost:9084/FormFeatureServices.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

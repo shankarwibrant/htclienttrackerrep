@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d54ef2bd-6efc-4894-8549-cd92fa793132" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.Generic.List`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:9084/IssueApprovalService.svc?wsdl" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="IssueApprovalService.wsdl" MetadataType="Wsdl" ID="b4fb261a-109d-4d40-9f17-d25ed3d9f150" SourceId="1" SourceUrl="http://localhost:9084/IssueApprovalService.svc?wsdl" />
+    <MetadataFile FileName="IssueApprovalService.xsd" MetadataType="Schema" ID="9c051995-c3ed-4c37-be92-0d247d374564" SourceId="1" SourceUrl="http://localhost:9084/IssueApprovalService.svc?xsd=xsd1" />
+    <MetadataFile FileName="IssueApprovalService1.xsd" MetadataType="Schema" ID="aef551cd-ca6e-44d7-92d2-630d83e5c1d8" SourceId="1" SourceUrl="http://localhost:9084/IssueApprovalService.svc?xsd=xsd2" />
+    <MetadataFile FileName="IssueApprovalService2.xsd" MetadataType="Schema" ID="6f57633b-2c81-4973-8401-c0143ba98b21" SourceId="1" SourceUrl="http://localhost:9084/IssueApprovalService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

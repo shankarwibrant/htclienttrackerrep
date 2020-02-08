@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="PatientServices.CompliantApprovalService" CodeBehind="CompliantApprovalService.svc.cs" %>

@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ClientIssueRaiseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:9084/ClientIssueRaiseService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:9084/ClientIssueRaiseService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:9084/ClientIssueRaiseService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IClientIssueRaiseService_Create_InputMessage">
+    <wsdl:part name="parameters" element="tns:Create" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_Create_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_DeleteIssueRaiseById_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIssueRaiseById" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_DeleteIssueRaiseById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteIssueRaiseByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListMainpage_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListMainpage" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListMainpage_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListMainpageResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_clientList_InputMessage">
+    <wsdl:part name="parameters" element="tns:clientList" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_clientList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:clientListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_UpdateIssueEntrys_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueEntrys" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_UpdateIssueEntrys_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdateIssueEntrysResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_SaveRecord_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRecord" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_SaveRecord_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveRecordResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_GetAllFileById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFileById" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_GetAllFileById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetAllFileByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListByDtLID_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListByDtLID" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListByDtLID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListByDtLIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_AutoID_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoID" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_AutoID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoIDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListDepartmentName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListDepartmentName" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListDepartmentName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListDepartmentNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListModuleName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListModuleName" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListModuleName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListModuleNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListFormName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListFormName" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListFormName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListFormNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListCompltIssueNo_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListCompltIssueNo" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListCompltIssueNo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListCompltIssueNoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListFeatureName_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListFeatureName" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListFeatureName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListFeatureNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListIssueDate_InputMessage">
+    <wsdl:part name="parameters" element="tns:ListIssueDate" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_ListIssueDate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ListIssueDateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_AutoIDSelf_InputMessage">
+    <wsdl:part name="parameters" element="tns:AutoIDSelf" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_AutoIDSelf_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AutoIDSelfResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_PastIssueSearch_InputMessage">
+    <wsdl:part name="parameters" element="tns:PastIssueSearch" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_PastIssueSearch_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PastIssueSearchResponse" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_FileuploadSer_InputMessage">
+    <wsdl:part name="parameters" element="tns:FileuploadSer" />
+  </wsdl:message>
+  <wsdl:message name="IClientIssueRaiseService_FileuploadSer_OutputMessage">
+    <wsdl:part name="parameters" element="tns:FileuploadSerResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IClientIssueRaiseService">
+    <wsdl:operation name="Create">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/Create" message="tns:IClientIssueRaiseService_Create_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/CreateResponse" message="tns:IClientIssueRaiseService_Create_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIssueRaiseById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/DeleteIssueRaiseById" message="tns:IClientIssueRaiseService_DeleteIssueRaiseById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/DeleteIssueRaiseByIdResponse" message="tns:IClientIssueRaiseService_DeleteIssueRaiseById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListMainpage">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListMainpage" message="tns:IClientIssueRaiseService_ListMainpage_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListMainpageResponse" message="tns:IClientIssueRaiseService_ListMainpage_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="clientList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/clientList" message="tns:IClientIssueRaiseService_clientList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/clientListResponse" message="tns:IClientIssueRaiseService_clientList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssueEntrys">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/UpdateIssueEntrys" message="tns:IClientIssueRaiseService_UpdateIssueEntrys_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/UpdateIssueEntrysResponse" message="tns:IClientIssueRaiseService_UpdateIssueEntrys_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveRecord">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/SaveRecord" message="tns:IClientIssueRaiseService_SaveRecord_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/SaveRecordResponse" message="tns:IClientIssueRaiseService_SaveRecord_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFileById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/GetAllFileById" message="tns:IClientIssueRaiseService_GetAllFileById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/GetAllFileByIdResponse" message="tns:IClientIssueRaiseService_GetAllFileById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListByDtLID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListByDtLID" message="tns:IClientIssueRaiseService_ListByDtLID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListByDtLIDResponse" message="tns:IClientIssueRaiseService_ListByDtLID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/AutoID" message="tns:IClientIssueRaiseService_AutoID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/AutoIDResponse" message="tns:IClientIssueRaiseService_AutoID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListDepartmentName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListDepartmentName" message="tns:IClientIssueRaiseService_ListDepartmentName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListDepartmentNameResponse" message="tns:IClientIssueRaiseService_ListDepartmentName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListModuleName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListModuleName" message="tns:IClientIssueRaiseService_ListModuleName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListModuleNameResponse" message="tns:IClientIssueRaiseService_ListModuleName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFormName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListFormName" message="tns:IClientIssueRaiseService_ListFormName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListFormNameResponse" message="tns:IClientIssueRaiseService_ListFormName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCompltIssueNo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListCompltIssueNo" message="tns:IClientIssueRaiseService_ListCompltIssueNo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListCompltIssueNoResponse" message="tns:IClientIssueRaiseService_ListCompltIssueNo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListFeatureName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListFeatureName" message="tns:IClientIssueRaiseService_ListFeatureName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListFeatureNameResponse" message="tns:IClientIssueRaiseService_ListFeatureName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ListIssueDate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListIssueDate" message="tns:IClientIssueRaiseService_ListIssueDate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/ListIssueDateResponse" message="tns:IClientIssueRaiseService_ListIssueDate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AutoIDSelf">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/AutoIDSelf" message="tns:IClientIssueRaiseService_AutoIDSelf_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/AutoIDSelfResponse" message="tns:IClientIssueRaiseService_AutoIDSelf_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PastIssueSearch">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/PastIssueSearch" message="tns:IClientIssueRaiseService_PastIssueSearch_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/PastIssueSearchResponse" message="tns:IClientIssueRaiseService_PastIssueSearch_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="FileuploadSer">
+      <wsdl:input wsaw:Action="http://tempuri.org/IClientIssueRaiseService/FileuploadSer" message="tns:IClientIssueRaiseService_FileuploadSer_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IClientIssueRaiseService/FileuploadSerResponse" message="tns:IClientIssueRaiseService_FileuploadSer_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IClientIssueRaiseService" type="tns:IClientIssueRaiseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Create">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/Create" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteIssueRaiseById">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/DeleteIssueRaiseById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListMainpage">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListMainpage" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="clientList">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/clientList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateIssueEntrys">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/UpdateIssueEntrys" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveRecord">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/SaveRecord" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAllFileById">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/GetAllFileById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListByDtLID">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListByDtLID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoID">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/AutoID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListDepartmentName">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListDepartmentName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListModuleName">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListModuleName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFormName">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListFormName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCompltIssueNo">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListCompltIssueNo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListFeatureName">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListFeatureName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListIssueDate">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/ListIssueDate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AutoIDSelf">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/AutoIDSelf" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PastIssueSearch">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/PastIssueSearch" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FileuploadSer">
+      <soap:operation soapAction="http://tempuri.org/IClientIssueRaiseService/FileuploadSer" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ClientIssueRaiseService">
+    <wsdl:port name="BasicHttpBinding_IClientIssueRaiseService" binding="tns:BasicHttpBinding_IClientIssueRaiseService">
+      <soap:address location="http://localhost:9084/ClientIssueRaiseService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

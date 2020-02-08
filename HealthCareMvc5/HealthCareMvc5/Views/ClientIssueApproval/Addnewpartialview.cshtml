@@ -1,0 +1,933 @@
+﻿
+@{
+    Layout = null;
+}
+<style>
+
+    .btn-box-tool {
+        padding: 5px;
+        font-size: 18px;
+        background: transparent;
+        color: #97a0b3;
+    }
+
+    .comments {
+        width: 600px;
+        margin: 30px auto;
+    }
+
+    .insert-text {
+        position: relative;
+    }
+
+        .insert-text .loading {
+            position: absolute;
+            bottom: -25px;
+            display: none;
+        }
+
+        .insert-text .total-comment {
+            position: absolute;
+            bottom: -25px;
+            right: 0px;
+        }
+
+    .total-comment {
+        display: inline-block;
+        min-width: 10px;
+        padding: 3px 7px;
+        font-size: 17px;
+        font-weight: 700;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        background-color: #00a65a;
+        border-radius: 10px;
+    }
+
+    .insert-text .total-comment:before {
+        content: "Total comment: ";
+        font-weight: bold;
+    }
+
+    .list-comments {
+        margin-top: 30px;
+        border: 1px solid #ccc;
+        background: #f0f0f0;
+    }
+
+        .list-comments > div {
+            padding: 10px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .list-comments > div:last-child {
+                border-bottom: none;
+            }
+
+    .editor {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+    .editor-header {
+        border-bottom: 1px solid #ccc;
+    }
+
+        .editor-header a {
+            display: inline-block;
+            padding: 10px;
+            color: #666;
+        }
+
+            .editor-header a:hover {
+                color: #000;
+            }
+
+    /*.editor-content {
+        padding: 10px;
+        outline: none;
+        min-height: 80px;
+        background: #f9f9f9;
+        border-radius: 0px 0px 5px 5px;
+    }
+
+        .editor-content:focus {
+            background: #fff;
+        }*/
+
+    .modal-content {
+        width: 130%;
+    }
+
+    b {
+        font-weight: bold;
+    }
+
+    i {
+        font-style: italic;
+    }
+
+    p {
+        line-height: 20px;
+    }
+
+    a {
+        text-decoration: none;
+    }
+
+    [data-role="bold"] {
+        font-weight: bold;
+    }
+
+    [data-role="italic"] {
+        font-style: italic;
+    }
+
+    [data-role="underline"] {
+        text-decoration: underline;
+    }
+
+    [class^="menu"] {
+        position: relative;
+        top: 6px;
+        display: block;
+        width: 27px;
+        height: 2px;
+        margin: 0 auto;
+        background: #999;
+    }
+
+        [class^="menu"]:before {
+            content: '';
+            top: -5px;
+            width: 80%;
+            position: relative;
+            display: block;
+            height: 2px;
+            margin: 0 auto;
+            background: #999;
+        }
+
+        [class^="menu"]:after {
+            content: '';
+            top: 3px;
+            width: 80%;
+            position: relative;
+            display: block;
+            height: 2px;
+            margin: 0 auto;
+            background: #999;
+        }
+
+    .menu-left {
+        margin-right: 5px;
+    }
+
+        .menu-left:before {
+            margin-right: 5px;
+        }
+
+        .menu-left:after {
+            margin-right: 5px;
+        }
+
+    .menu-right {
+        margin-left: 5px;
+    }
+
+        .menu-right:before {
+            margin-left: 5px;
+        }
+
+        .menu-right:after {
+            margin-left: 5px;
+        }
+</style>
+<!-- Tab -->
+@*<section class="pb-5 team">
+        <div class="container">
+
+            <h3 id="lblOCount"></h3>
+            <div id="DivC">
+                <!-- Team member -->
+                <!-- ./Team member -->
+            </div>
+
+        </div>
+        <div class="container">
+            <h3 id="lblICount"></h3>
+            <div id="DivP" class="row">
+
+                <!-- Team member -->
+                <!-- ./Team member -->
+            </div>
+        </div>
+    </section>*@
+<input type="hidden" id="issueId" />
+<input type="hidden" id="IssueDetailId" />
+<div class="modal fade" id="fileUploadPop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 32%">
+        <div class="modal-content">
+            <div class="modal-header" style="background-color: #00766c">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span class="color:#FFF;" aria-hidden="true">×</span>
+                </button>
+                <h4 class="modal-title" style="color: #FFF;">Attachment</h4>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+
+                    <div id="CaptureDiv" class="bs-example table-responsive col-sm-12" style="width: 100%">
+                        <table id="FileSelectTbl" class="table table-striped table-bordered table-hover" style="width: 100%">
+                            <thead>
+                                <tr>
+                                    <th>
+                                        <label>
+                                            Content
+                                        </label>
+                                    </th>
+                                    <th>
+                                        <label>
+                                            File ID
+                                        </label>
+                                    </th>
+                                    <th>
+                                        <label>
+                                            File&nbsp;Name
+                                        </label>
+                                    </th>
+                                    <th>
+                                        <label>
+                                            File&nbsp;Type
+                                        </label>
+                                    </th>
+                                    <th>
+                                        <label>
+                                            Remove
+                                        </label>
+                                    </th>
+                                    <th>
+                                        <label>
+                                            Activeflag
+                                        </label>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+
+                </div>
+            </div>
+            <div class="modal-footer">
+
+                <div class="row pull-center">
+                    <button type="button" class="btn btn-outline-success" onclick="attachclose()" data-dismiss="modal"> Close</button>
+                </div>
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </div>
+</div>
+<div class="modal fade in" id="popimage" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 55%">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row">
+                    <iframe id="Prev12" style="margin-left: 4px; width:100%; height:530px;" src=""></iframe>
+
+                    @*<img id="Prev1" style="display: none; margin-left: 4px; width:100%; height:582px;" src="" />*@
+                </div>
+            </div>
+            <!-- /.modal-dialog -->
+        </div>
+    </div>
+</div>
+<div class="modal fade in" id="filesCIEPop" data-backdrop="static" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" style="width: 55%;padding-right: 12%;">
+        <div class="modal-content">
+
+            <div class="modal-body">
+                <div class="row">
+                    <iframe id="pdfupload" style="margin-left: 4px; width:100%; height:530px;" src=""></iframe>
+                </div>
+            </div>
+
+
+            <div class="modal-footer">
+                <div class="row pull-center">
+                    <button type="button" id="btnpopupcloseRecord" class="btn btn-outline-success" data-dismiss="modal"><i class="fa fa-times-circle"></i>&nbsp;Close</button>
+
+
+                </div>
+                <!-- /.modal-content -->
+            </div>
+
+            <!-- /.modal-dialog -->
+        </div>
+    </div>
+</div>
+<div id="innerpage" class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="mainContent">
+        <div class="row box box-primary">
+            <!-- Default panel contents -->
+
+            <div class="panel-body">
+                <div id="da" class="bs-example table-responsive">
+                    <table id="myDataTable" class="table table-bordered table-hover dataTable">
+                        <thead style="text-transform:uppercase">
+                            <tr>
+                                <th>
+                                    Issue&nbsp;No
+                                </th>
+                                <th>
+                                    Client&nbsp;Issue&nbsp;No
+                                </th>
+                                <th>
+                                    Client&nbsp;Name
+                                </th>
+                                <th>
+                                    Description
+                                </th>
+                                <th>
+                                    Module&nbsp;Name
+                                </th>
+                                <th>
+                                    Form&nbsp;Name
+                                </th>
+                                <th>
+                                    Product&nbsp;Name
+                                </th>
+                                <th>
+                                    Owner
+                                </th>
+                                <th>
+                                    No
+                                </th>
+                                <th>
+                                    Issue&nbsp;Date
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                </div>
+            </div>
+            <!-- Table -->
+        </div>
+    </div>
+    @*<div role="tabpanel" class="tab-pane" id="actionContent">
+            <div id="CenterParitalView">
+            </div>
+        </div>*@
+
+</div>
+
+<input type="hidden" @*value="@ViewData["Delete"]"*@ id="Edelete" />
+
+
+<div id="printpage" class="row box box-primary">
+    <!-- Default panel contents -->
+
+    <div class="panel-body">
+
+
+
+        <div class="row">
+            <div class="col-sm-3">
+                <label>
+                    User&nbsp;Name
+                </label>
+                <input type="text" id="UserName" class="form-control form-control-sm" disabled="disabled" />
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    SMC&nbsp;Status
+                </label>
+                <input type="text" value="Active" class="form-control form-control-sm" disabled="disabled" />
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    Date
+                </label>
+                <input type="text" id="lbltxt" class="form-control form-control-sm" disabled="disabled" />
+            </div>
+            <div class="col-sm-3">
+                <label>
+                    Company&nbsp;Name
+                </label>
+                <input type="text" id="CompanyName" class="form-control form-control-sm" disabled="disabled" />
+            </div>
+
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="da" class="bs-example table-responsive">
+                    <table id="tbl" class="tbl table table-striped table-bordered table-hover">
+                        <thead style="text-transform:uppercase">
+                            <tr>
+                                <th>
+                                    <label>
+                                        Description
+                                    </label>
+                                </th>
+                                <th>
+                                    <label>
+                                        IssueDetailID
+                                    </label>
+                                </th>
+                                <th>
+                                    Module&nbsp;Name
+                                </th>
+                                <th>
+                                    Form&nbsp;Name
+                                </th>
+                                <th>
+                                    Product&nbsp;Name
+                                </th>
+                                <th>
+                                    File
+                                </th>
+                                @*<th style="width: 5px !important">
+                                        <input type="checkbox" id="checkall" />
+                                    </th>*@
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="row"><br /></div>
+        <div class="row">
+            <div class="col-sm-8">
+                <div class="box box-success direct-chat direct-chat-success">
+                    <!-- DIRECT CHAT SUCCESS -->
+                    <div>
+                        <div class="box-header with-border">
+                            <h3 class="box-title">Comments</h3>
+                            <div class="box-tools pull-right">
+
+                                <span data-toggle="tooltip" title="" class="total-comment" data-original-title="3 New Messages"></span>
+                                <button type="button" class="btn btn-box-tool" data-toggle="collapse" data-target="#demo">
+                                    <i class="fa fa-minus"></i>
+                                </button>
+                            </div>
+
+                        </div>
+                        <!-- /.box-header -->
+                        <div id="demo" class="collapse in">
+
+                            <div class="list-comments">
+
+                            </div>
+                            <!-- /.box-body -->
+                            <div class="box-footer">
+
+                                <div class="input-group">
+                                    <div input type="text" name="message" placeholder="Type Message ..." id="text" class="form-control" contenteditable>
+
+                                    </div>
+
+                                    <span class="input-group-btn">
+                                        <input type="hidden" id="IssueDetailID1" />
+                                        <input type="hidden" id="IssueID1" />
+                                        <button type="submit" class="btn btn-success btn-flat" id="comms">Comments</button>
+                                    </span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- /.box-footer-->
+                    </div>
+                    <!--/.direct-chat -->
+                </div>
+
+                <br />
+                <!--hidden fields-->
+                <input type="hidden" id="ComplaintNo" />
+            </div>
+            <div class="col-sm-4">
+                <span class="pull-right">
+                    <button class="btn btn-success" onclick ="Save(2)" id="btnSave"><i class="fa fa-check-circle" aria-hidden="true"></i>Approve</button>
+                    <button class="btn btn-danger"  onclick ="Save(3)" id="btnReject"><i class="fa fa-times-circle"></i>Reject</button>
+                    <button class="btn btn-danger" id="btnCancel"><i class="fa fa-times-circle"></i>Cancel</button>
+                </span>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- scripts-->
+<script type="text/javascript">
+    $("#innerpage").show();
+    $("#printpage").hide();
+
+        $('#comms').click(function () {
+             debugger
+            var $text = $("#text"),
+                $submit = $("input[type='submit']"),
+                $listComment = $(".list-comments"),
+                $loading = $(".loading"),
+                _data,
+                $totalCom = $(".total-comment");
+            $totalCom.text($(".list-comments > div").length);
+            if ($text.html() == "") {
+                alert("Plesea write a comment!");
+                $text.focus();
+            } else {
+                var objissueDtl = { "Type": "", "CommentsID": "", "UserName": "", "Comments": "", "CreatedBy": "", "IssueID": "", "IssueDetailID": "","Clientid":""}
+                objissueDtl.Clientid = '@Session["CilentID"]';
+                objissueDtl.Comments = $text.html();
+                objissueDtl.CommentsID = 0;
+                objissueDtl.CreatedBy ='@Session["UserID"]';
+                objissueDtl.IssueDetailID = $("#IssueDetailID1").val();
+                objissueDtl.IssueID = $("#IssueID1").val();
+                objissueDtl.Type = 1;
+                objissueDtl.UserName='@Session["UserName"]';
+                $.ajax({
+                    url: '../ClientIssueApproval/CreateComments',
+                    data: JSON.stringify({ objissueDtl: objissueDtl }),
+                    type: 'POST',
+                    contentType: 'application/json;',
+                    dataType: 'json',
+                    success: function (result) {
+                _data = $text.html();
+                var htmla = "";
+                $.ajax({
+                    type: "POST",
+                    url: window.local,
+                    data: _data,
+                    cache: false,
+                    success: function (html) {
+                        $loading.show().fadeOut(300);
+                      
+                        var UserList = '@Session["UserName"]';
+                        var d = new Date($.now());
+                        var ampm = (d.getHours() >= 12) ? "PM" : "AM";
+                        var month_names = ["Jan", "Feb", "Mar",
+                            "Apr", "May", "Jun",
+                            "Jul", "Aug", "Sep",
+                            "Oct", "Nov", "Dec"];
+                        var month_index = d.getMonth();
+                        var date = (d.getDate() + "-" + month_names[month_index] + "-" + d.getFullYear() + " " + d.getHours() + ":" + d.getMinutes() + ":" + d.getSeconds() + ' ' + ampm);
+                        //htmla += "<span>" + UserList +"</span> at  "+date+"";
+                        //htmla += "<div>" + _data + "</div>";
+                        htmla += '<div class="row"><div class="col-sm-6"><label>' + UserList + ' : ' + _data + '</label></div>';
+                        htmla += '<div class="col-sm-6"></div><div class="col-sm-6"><label>' + date + '</label></div><div class="col-sm-6"></div></div>';
+
+                        $listComment.append(htmla);
+                        $text.html("");
+                        $totalCom.text($(".list-comments > div").length);
+                    }
+                });
+                return false;
+            }
+
+                });
+
+            }
+
+    });
+
+
+
+    $('#btnCancel').click(function () {
+        debugger
+        $('#myDataTable').dataTable().fnPageChange('first');
+        var oTable = $(".tbl").dataTable();
+        oTable.fnClearTable();
+        $('#myDataTable').dataTable().fnDraw();
+        $('#innerpage').show();
+        $('#printpage').hide();
+        //$('#mainTab a[href="#mainContent"]').tab('show');
+        //$.get("../ClientIssueApproval/ADDNEWPARTIALVIEW", { cache: false, headers: { "Accept-Encoding": "gzip" } }, function (n) {
+
+        //    $("#ADDNEWPARTIALVIEW").html(n);
+
+        //});
+        //$('#printpage').hide();
+
+
+    });
+
+
+    $('.tbl').dataTable({
+
+        "bFilter": false,
+        "bDestroy": true,
+        "bAutoWidth": false,
+        "bLengthChange": false,
+        "iDisplayLength": 3,
+        'bPaginate': true,
+        "sDom": "Rlfrtip",
+        'bInfo': true,
+        "iDisplayLength": 5,
+        //"sPaginationType": "bootstrap",
+        "aoColumns": [
+
+            { "sName": "" },
+            { "sName": "", "bVisible": false },
+            { "sName": "" },
+            { "sName": "" },
+            { "sName": "featurename" },
+{ "sName": "" }
+
+        ]
+
+        });
+
+
+        function Save(approveflag) {
+            debugger;
+            var oTable = $('#tbl').dataTable().fnGetData();
+
+        var cApproveArray = [];
+
+        var objCApprove = { "IssueDetailID": "", "ClientIssueNo": "", "ApproveFlag": "" };
+
+            for (var i = 0; i < oTable.length; i++) {
+
+                objCApprove.IssueDetailID = oTable[i][1];
+                objCApprove.ClientIssueNo = $("#ComplaintNo").val();
+                objCApprove.ApproveFlag = approveflag;
+                //objCApprove.OverAllPriority = "HIGH";
+
+                cApproveArray.push(objCApprove);
+                objCApprove = { "IssueDetailID": "", "ClientIssueNo": "", "ApproveFlag": "" };
+            }
+        //});
+        if (cApproveArray.length > 0) {
+            $.ajax({
+                url: "../ClientIssueApproval/Create",
+                data: JSON.stringify({ approvalList: cApproveArray }),
+                type: 'POST',
+                contentType: 'application/json;',
+                dataType: 'json',
+                success: function (result) {
+                    debugger;
+                    var IssueDetailID = $("#ComplaintNo").val();
+                    var callemailurl = result.servicePath + "CompliantApprovalService.svc/web/ListClientIssueEntry?IssueDetailID=" + IssueDetailID;
+                    $.getJSON(callemailurl, function (data1) {
+                        debugger;
+                        alert();
+                        //console.log(JSON.stringify(data1));
+                    });
+
+
+                    if (approveflag == 2)
+                        bootbox.alert({ size: "small", message: "Apporved successfully !" });
+                    else
+                        bootbox.alert({ size: "small", message: "Rejected !" });
+                    //bootbox.alert("Apporved successfully !");
+                    $('#myDataTable').dataTable().fnDraw();
+                    $('#innerpage').show();
+                    $('#printpage').hide();
+                    //$.get("../ClientIssueApproval/ADDNEWPARTIALVIEW", { cache: false, headers: { "Accept-Encoding": "gzip" } }, function (n) {
+                    //    $("#ADDNEWPARTIALVIEW").html('');
+                    //    $("#ADDNEWPARTIALVIEW").html(n);
+
+                    //});
+                    //$('#mainTab a[href="#mainContent"]').tab('show');
+                }
+
+            });
+        } else {
+
+            bootbox.alert("Select record");
+        }
+        }
+
+
+
+    //    $("#checkall").change(function () {
+    //    debugger
+    //        var oTable = $('#tbl').dataTable().fnGetData();
+
+    //        if ($(this).is(":checked")) {
+
+    //            $(".check").attr("checked", "checked");
+
+    //        }
+    //        else {
+    //            $(".check").attr("checked", false);
+    //        }
+    //});
+
+    //////
+
+    /* Bootstrap style pagination control  start*/
+
+
+
+    /* Bootstrap style pagination control end */
+
+
+
+
+    $('#myDataTable').dataTable({
+
+        "bPaginate": true,
+        "bLengthChange": false,
+        "bFilter": true,
+        "bSort": false,
+        "bInfo": true,
+        "bAutoWidth": false,
+        "bProcessing": true,
+        "bDestroy": true,
+        "bServerSide": true,
+
+        "sAjaxSource": "../ClientIssueApproval/maingrid",
+
+
+        "aoColumns": [
+
+            { "sName": "CompliantNo" },
+            { "sName": "ClientIssueNo", "bVisible": false },
+            { "sName": "ComPanyName" },
+            { "sName": "IssueDescription", "bVisible": false },
+            { "sName": "ModuleName" },
+            { "sName": "FormName" },
+            { "sName": "featureName" },
+            { "sName": "CompliantRaisedBy" },
+            { "sName": "NoOfIssue", "bVisible": false },
+            { "sName": "CreatedDate", sWidth: '5px', sClass: "alignCenter" },
+            { "sName": "Status" },
+
+
+
+
+
+        ]
+
+    });
+
+
+    $("#myDataTable tbody").delegate("tr", "dblclick", function () {
+
+        debugger
+        var Maintable = $('#myDataTable').dataTable();
+        var iPos = Maintable.fnGetPosition(this);
+
+        if (iPos != null) {
+            var aData = Maintable.fnGetData(iPos);
+            var iId0 = aData[0];
+            var iId1 = aData[1];
+            var iId2 = aData[2];
+            var iId3 = aData[3];
+            var iId4 = aData[4];
+            var iId5 = aData[5];
+            var iId6 = aData[6];
+            var iId7 = aData[7];
+            var iId8 = aData[8];
+            var iId9 = aData[9];
+            var iId10 = aData[10];
+            $('#ComplaintNo').val(iId1);
+            $('#CompanyName').val(iId2);
+            $('#UserName').val(iId7);
+            $('#lbltxt').val(iId9);
+            $('#checkall').attr('checked', false);
+            //$('#btncomm').val(iId1);
+            $('#printpage').show();
+            $('#innerpage').hide();
+            if (iId10 == "In Progress") {
+                $('#btnSave').show();
+            }
+            else if (iId10 == "Rejected") {
+                $('#btnSave').hide();
+                $('#btnReject').hide();
+            }
+            else {
+                $('#btnSave').hide();
+                $('#btnReject').hide();
+            }
+                
+           
+
+
+
+            $.ajax({
+                url: "../ClientIssueApproval/BindGrid?iId1=" + iId1,
+                type: 'POST',
+                data: { id: iId1 },
+                dataType: 'json',
+                success: function (result) {
+
+                    $.each(result, function (i, item) {
+                        debugger;
+
+                        $('.tbl').dataTable().fnAddData([item.IssueDescription, item.IssueDetailID, item.ModuleName, item.FormName, item.FeatureName, '<center><i id="btnAttachFile" data-toggle="tooltip" title="Attachment" onclick="attachment()" class="fa fa-paperclip btnAttachFile"></i></center>']);
+
+                    });
+
+                    //$('#mainTab a[href="#actionContent"]').tab('show');
+
+                }
+
+            });
+
+            var IssueRaiseDetailID = iId1;
+            $("#IssueDetailID1").val(IssueRaiseDetailID);
+            $.ajax({
+                url: "../ClientIssueRaise/GetAllFileById",
+                type: 'POST',
+                data: { IssueDetailID: IssueRaiseDetailID },
+                dataType: 'json',
+                success: function (result) {
+
+                    $.each(result, function (i, item) {
+                        debugger
+                        $('#FileSelectTbl').dataTable().fnAddData(['', item.FileId, item.FileName, item.FileType, '<center><i class="fa fa-times-circle icon-cSize iconFileDelete" onclick="GetFileById(+item.FileId+)"></i><center>', 1]);
+                    });
+
+
+                }
+            });
+
+            var IssueRaiseDetailID = iId1;
+            $("#IssueDetailID1").val(IssueRaiseDetailID);
+
+            var htmla = "";
+            $listComment = $(".list-comments");
+            $(".list-comments").empty();
+            $.ajax({
+                url: "../ClientIssueApproval/GetComments",
+                dataType: 'json',
+                data: { IssueDetailID: IssueRaiseDetailID },
+                type: 'POST',
+                success: function (result) {
+                    $(".list-comments").empty();
+                    $totalCom = $(".total-comment");
+                    $totalCom.text(result.length);
+                    $.each(result, function (i, item) {
+                        htmla += '<div class="row"><div class="col-sm-6"><label>' + item.UserName + ' : ' + item.Comments + '</label></div>';
+                        htmla += '<div class="col-sm-6"></div><div class="col-sm-6"><label>' + item.CommentsDate + '</label></div><div class="col-sm-6"></div></div>';
+                    });
+                    $listComment.append(htmla);
+                }
+
+
+            });
+
+        }
+
+
+    });
+
+    
+    
+    $("#btnpopupcloseRecord").click(function () {
+
+        $("#fileUploadPop").modal('show');
+        $('#filesCIEPop').modal('hide');
+    });
+
+    function attachment() {
+        debugger
+            $("#fileUploadPop").modal('show');
+
+        }
+
+        var FileSelectTbl = $('#FileSelectTbl').dataTable({
+
+            "bFilter": false,
+            "bDestroy": true,
+            "sDom": "Rfrt",
+            "aoColumns": [
+                { "sName": "", "bVisible": false },
+                { "sName": "", "bVisible": false },
+                { "sName": "" },
+                { "sName": "", "bVisible": true },
+                { "sName": "activeflag", "sClass": "center", "bVisible": false },
+                { "sName": "activeflag", "sClass": "center", "bVisible": false }
+            ]
+        });
+
+    $("#FileSelectTbl tbody").delegate("tr", "dblclick", function () {
+        debugger;
+        var main123 = $('#FileSelectTbl').dataTable();
+        var ipos = main123.fnGetPosition(this);
+        if (ipos != null) {
+            var adata = main123.fnGetData(ipos);
+            var file = adata[0];
+            var fileid = adata[1];
+
+            doSomething(fileid, file);
+        }
+    });
+
+    function doSomething(fileid, file) {
+
+           debugger;
+            var src1 = "";
+            $('#pdfupload').attr('src', src1);
+            $('#filesCIEPop').modal('show');
+            $("#btnpopupcloseRecord").modal('show');
+            $("#fileUploadPop").modal('hide');
+            $('#pdfupload').css("display", "block");
+        if (fileid == 0) {
+            $('#pdfupload').attr('src', file);
+            }
+            else {
+                var s = fileid;
+                var src1 = '@Url.Action("mainfile", "ClientIssueApproval", new { id = "-1" })';
+                src1 = src1.replace("-1", s);
+            $('#pdfupload').attr('src', src1);
+            $("#download").val(fileid);
+        }
+    }
+
+ 
+</script>

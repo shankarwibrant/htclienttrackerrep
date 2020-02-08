@@ -1,0 +1,1561 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>
+    </TimeStampOfAssociatedLegacyPublishXmlFile>
+    <_PublishTargetUrl>C:\Users\lenovo\Desktop\SER03022020</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="AccessGroupRightsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="AccessGroupService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="AddressFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="AdmissionFacadeServices.svc">
+      <publishTime>03/16/2017 10:19:30</publishTime>
+    </File>
+    <File Include="AdmissionMultiPanalService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="AdmissionService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="AppointmentNewService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="AppointmentService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="AreaService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="BankService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="BaseUserService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="BedcategoryService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="BedChargeService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="BedFacadeService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="BedMatrixFacade.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="BedMatrixService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="BedMatrixWardFacade.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="BedService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="BedStatusService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="BillOfMaterialService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="BillStatusService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="bin/ar/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.CrystalReports.Engine.dll">
+      <publishTime>10/24/2010 04:56:38</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ClientDoc.dll">
+      <publishTime>04/27/2019 16:27:36</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommLayer.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonControls.dll">
+      <publishTime>04/27/2019 16:27:37</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CommonObjectModel.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Controllers.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.CubeDefModel.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataDefModel.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.DataSetConversion.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ObjectFactory.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.Prompting.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.ReportDefModel.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportAppServer.XmlSerialize.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.ReportSource.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Shared.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/CrystalDecisions.Web.dll">
+      <publishTime>10/24/2010 04:56:40</publishTime>
+    </File>
+    <File Include="bin/cs/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/HealthCareObjects.dll">
+      <publishTime>02/03/2020 18:17:17</publishTime>
+    </File>
+    <File Include="bin/HealthCareObjects.pdb">
+      <publishTime>02/03/2020 18:17:17</publishTime>
+    </File>
+    <File Include="bin/hi/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:17</publishTime>
+    </File>
+    <File Include="bin/HMSCommon.dll">
+      <publishTime>11/26/2019 12:40:25</publishTime>
+    </File>
+    <File Include="bin/HMSCommon.dll.config">
+      <publishTime>04/27/2019 16:32:57</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>01/28/2016 14:22:24</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.Silverlight.dll">
+      <publishTime>04/27/2019 09:59:16</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.Silverlight.xml">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/nl/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/PatientLibrary.dll">
+      <publishTime>02/03/2020 18:17:18</publishTime>
+    </File>
+    <File Include="bin/PatientLibrary.dll.config">
+      <publishTime>11/26/2019 12:33:04</publishTime>
+    </File>
+    <File Include="bin/PatientLibrary.pdb">
+      <publishTime>02/03/2020 18:17:18</publishTime>
+    </File>
+    <File Include="bin/PatientServices.dll">
+      <publishTime>02/03/2020 18:17:41</publishTime>
+    </File>
+    <File Include="bin/PatientServices.pdb">
+      <publishTime>02/03/2020 18:17:41</publishTime>
+    </File>
+    <File Include="bin/Pop3ClientLibrary.dll">
+      <publishTime>11/26/2019 12:40:25</publishTime>
+    </File>
+    <File Include="bin/Pop3Library.dll">
+      <publishTime>11/26/2019 12:40:25</publishTime>
+    </File>
+    <File Include="bin/pt/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/RIACommon.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/ru/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/stdole.dll">
+      <publishTime>03/16/2017 10:18:42</publishTime>
+    </File>
+    <File Include="bin/System.Xml.Linq.dll">
+      <publishTime>04/27/2019 09:59:16</publishTime>
+    </File>
+    <File Include="bin/tr-TR/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:15</publishTime>
+    </File>
+    <File Include="bin/zh-CHS/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:16</publishTime>
+    </File>
+    <File Include="bin/zh-CHT/AjaxControlToolkit.resources.dll">
+      <publishTime>04/27/2019 09:59:16</publishTime>
+    </File>
+    <File Include="BloodService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="BrandService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="BrokenDrugsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CardreplacementService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CarrierRefService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="CaseConversionExceptionsService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CaseSheetDiagnosisService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CaseSheetNewService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="casesheetPrescriptionDetailService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="CaseSheetPrescriptionDetailsFor.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CaseSheetStatusFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CaseSheetStatusService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="CategoryService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ChargeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ChargesFacadeService.svc">
+      <publishTime>03/16/2017 10:19:35</publishTime>
+    </File>
+    <File Include="ChargeTypeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ChartReceiveService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ChartSendService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CityService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="clientaccesspolicy.xml">
+      <publishTime>11/26/2019 12:40:25</publishTime>
+    </File>
+    <File Include="ClientIssueRaiseService.svc">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="ClientService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="CompanyService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CompliantApprovalService.svc">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="ContractPageService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="CountBillService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="CounterClosingService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="CountryService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CountryStateCityRefService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CountSheetAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CountSheetLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CountSheetLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CountSheetService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="CountSheetStickyService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CountSheetStickyVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CountSheetVersionService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CurrencyCodeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CustomerAddressService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="CustomerAddressVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CustomerAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="CustomerBalacneFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="CustomerBalanceService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CustomerQuotationService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="CustomerService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="CustomerVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DateSettingService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DeliveryscheduleService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DepartmentIssueService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DepartmentMasterService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="DepartmentService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="DepartmentTestService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DiabetesListService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="DiagnosisService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DischargeHeaderDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="DischargeHeaderService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DischargeSummaryDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="DischargeSummaryService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DiscountAuthorityServices.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DiscountTypeServices.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="DispatchClaimService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DoctorDepartmentService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DoctorDetailService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DoctorService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="DoctorVisitingTimeDetailService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DoctorVisitingTimeMasterService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DoctorVisitTimingsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DosageService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DrugService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="DrugTypeSevice.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="DummyCurrentQtyAdjustmentLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DummyCurrentQtyAdjustmentService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="DummyPriceAdjustmentLineService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="DummyPriceAdjustmentService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="DummyReorderStockLineService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="DummyReorderStockService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="DummyStockAdjustmentLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DummyStockAdjustmentService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="DummyStockTransferLineService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="DummyStockTransferService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="EMailService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="EmployeeMasterService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="EmployeeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="EnRequestApprovalService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="EnRequestEntryService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="EntityAccess.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="EntityAccessRightsFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="EntityAccessRightsService.svc">
+      <publishTime>04/27/2019 09:59:14</publishTime>
+    </File>
+    <File Include="EntityFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="EntityService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="EntityUserRightsService.svc">
+      <publishTime>03/16/2017 10:19:30</publishTime>
+    </File>
+    <File Include="ExceptionService.svc">
+      <publishTime>03/16/2017 10:19:30</publishTime>
+    </File>
+    <File Include="ExchangeFormService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ExchangeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="FileAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="FinalBillDetailService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="FinalBillService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="FinalDiagnosisDetailService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="FinalDiagnosisService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="FormFeatureServices.svc">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="ForumMessageService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ForumService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="GenericService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="GlobalActiveUsersService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="GlobalCompanyPreferencesService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="GlobalCurrencyService.svc">
+      <publishTime>03/16/2017 10:19:35</publishTime>
+    </File>
+    <File Include="GlobalCustomFieldsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="GlobalDefaultsService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="GlobalDocNoFormatService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="GlobalLanguageService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="GlobalResourceService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="GlobalSublocationService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="GlucoseTestService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="GoodReturnNoteService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="GRNDetailService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="GRNService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="GroupingService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="HealthCareWeb.sln">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="IDGenerationService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="IncidentService.svc">
+      <publishTime>04/27/2019 14:53:11</publishTime>
+    </File>
+    <File Include="IndentInwardsService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="IndentOutwardService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="IndentRequestService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="InventoryCostLogBatchService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="InventoryCostLogDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="InventoryCostService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="InventoryLogBatchService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="InventoryLogDetailService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="InventoryQuantityTotalService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="InventoryService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="InventryAccessRightsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="InvestigationService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="InvoiceDetailService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="InvoiceFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="InvoiceProfileFacadeService.svc">
+      <publishTime>03/16/2017 10:19:35</publishTime>
+    </File>
+    <File Include="InvoiceProfileService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="InvoiceService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="InvoiceTypeService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="Invoice_TestDetailFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IpBedTransferService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="IPBillingDetailService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="IPBillingFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="IpBillingService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="IPBillStatusFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="IPCaseSheetClinicalNotesService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="IPCaseSheetPatientService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="IPCaseSheetService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="IPCashRefundService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IPDueEntryFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IPDueEntryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IPFinalDiagnosisDetailService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="IPFinalDiagnosisService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="IPFinalDignosisFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IpopDepartmentService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="IPPanelAdvanceService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="IPPanelClaimService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="IPPanelReceiptService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="IPPAtientMedicalCaseSheetHistoryService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="IPPatientSurgicalCaseSheetHistoryService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="IssueApprovalService.svc">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="IssueService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ItemBomService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="ItemBomVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ItemPriceService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="ItemPriceVersionService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ItemTaxCodeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="LabDueEntryService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="LoanService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="LOAService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="LocatinService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="LocationService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="LogInService.svc">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="MailsendService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="MailService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="MainStoreService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="MainStoreSubStoreService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ManufacturerService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="MarkUpService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ModelService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ModuleTypeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="MRDDepartment.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="MrdEmployeeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="Mrdfile.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="MrdFilecloseService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="MrdFileRequestService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="MRDFileTransferService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="MRDRunnerService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="MrdTrackingService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="MultiFieldTestService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="OccupationService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OnlineRequestService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OPBillingDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OPBillingService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="OPCaseSheetDiagonsisService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="OPCaseSheetDrugService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="OPCaseSheetService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OPCaseSheetTestService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OPCashRefund.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="OPDueEntryFacadeServices.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="OPDueEntryService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="OPEnquiryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="Openstack.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OPFinalBill.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OPFinalDiagnosisFacadeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="OPMedicalHistoryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OPPanelAdvanceService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OPPanelClaimService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OPPolicyService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="OPPrescriptionMasterDetailService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="OPPrescriptionMasterService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="OPPrescriptionProfileService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="OPpriorityservice.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OprationTheatreService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="OPSurgicalHistoryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OrderTaxCodeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OrthoCaseSheetNewService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="OTBillingService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OTBookingAvailablityService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="Otbookingentryservice.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OTCheckListMasterService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="OTCheckListService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="OTConfirmationService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OTDrugDetailsService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OTEquipmentsService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="OTIndentInward.svc">
+      <publishTime>02/07/2014 14:18:05</publishTime>
+    </File>
+    <File Include="OTInwarddetailsservice.svc">
+      <publishTime>02/07/2014 14:18:03</publishTime>
+    </File>
+    <File Include="OTNotesService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="OTNurseInformationService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="OTOutwardService.svc">
+      <publishTime>02/07/2014 14:18:05</publishTime>
+    </File>
+    <File Include="OTProductRequestService.svc">
+      <publishTime>02/07/2014 14:17:33</publishTime>
+    </File>
+    <File Include="OTProductUsageService.svc">
+      <publishTime>02/07/2014 14:18:04</publishTime>
+    </File>
+    <File Include="OTSurgeryDetailsEntryService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OTSurgeryProfileService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="OTSurgeryService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OTSurgicalDetailsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OutPatientFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="OverviewInFlowMessagesService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="OverviewInFlowMessagesUserService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PanelInvoiceService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PanelLetterPictureService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PanelMasterService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PanelServices.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="PatientBannerService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PatientDetailService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PatientFacadeService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PaymentMethodRefService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PaymentModeService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="PaymentTermsService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PDFViewService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PendingService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PersonalPreferencesService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PhyBOokingEntryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PhysioBillingService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PhysiocheckListService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PhysioConfirmationService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PhysioInWardService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PhysioNotesService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PhysioNUrseInformationService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PhysioOutwardService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PhysioProductRequestService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PhysioProductUsageService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="PhysioRoomService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PickListDetailService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PickListServices.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PickListTestMasterService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PicklistTestMastersFacade.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PickListTstFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PointredemptionService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PreAuthApprovalService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PreAuthEntryService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PrescProfileService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PrescriptionDetailService.svc">
+      <publishTime>03/16/2017 10:19:35</publishTime>
+    </File>
+    <File Include="PrescriptionProfileDetailService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PrescriptionProfileService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PrescriptionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PrescriptionTimeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PricingSchemeService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="PrintedDocumentColumnsService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ProcedureRoomService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ProductAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ProductDirectPurchaseFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ProductFacadeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ProductPackFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ProductPickFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ProductReceiveFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ProductService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="ProductTypeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ProductVersionService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="ProfileMasterDetailFacadeService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="ProfileMasterDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ProfileMasterFacade.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="ProfileMasterService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ProformaInvoiceService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PublicHolidayService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PurchaseDueEntryFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseDueEntryService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PurchaseOrderAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseOrderFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PurchaseOrderLineService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PurchaseOrderLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="PurchaseOrderPaymentLineService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PurchaseOrderPaymentLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PurchaseOrderReceiveLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseOrderReceiveLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PurchaseOrderReturnLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseOrderReturnLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="PurchaseOrderReturnTrackLineService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="PurchaseOrderService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseOrderStickyService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PurchaseOrderStickyVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PurchaseOrderUnstockLineService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="PurchaseOrderUnstockLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="PurchaseOrderVersionService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseprofileService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="PurchaseReturnService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="PurchaseStatusFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="QueueprocService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="QuotationService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ReceiptService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="RecevieService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="ReferenceDoctorService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="RefundService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="RegistrationFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="RegistrationFeeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="RegistrationService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="RelationShipService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ReorderLevelService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ReOrderStockFacadeService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="ReportCustomizationService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="REStatusPatientFacadeService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="ResultEntryDetailService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="ResultEntryMfTestFacadeService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ResultEntryService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ResultEntryServicesFacade.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ResultEntryTestDetail.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ReturnToMainStoreService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="RoleProfileService.svc">
+      <publishTime>04/27/2019 09:59:25</publishTime>
+    </File>
+    <File Include="RoleService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesandpromotionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesDueEntryService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesOrderAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SalesOrderDirectSales.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SalesOrderInvoiceLineService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesOrderInvoiceLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesOrderInvoiceSalesOrderListService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="SalesOrderLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SalesOrderLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderPackLineService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderPackLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="SalesOrderPickLineService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderPickLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="SalesOrderPickProductQtylistService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderProductQtyListService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SalesOrderRestockLineService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SalesOrderRestockLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SalesOrderReturnLineService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderReturnLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesOrderReturnTrackLineService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SalesOrderServicce.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SalesOrderShipContainerService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderShipContainerVersionService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SalesOrderShipLineService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SalesOrderShipLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SalesOrderStickyService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SalesOrderStickyVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SalesOrderVersionService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SalesRepRefService.svc">
+      <publishTime>03/16/2017 10:19:35</publishTime>
+    </File>
+    <File Include="SalesRepresentativeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SalesReturnCustomerService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="salesReturnProductService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SalutationService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SalutationServiceINV.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SampleCollectionPatientFacadeService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SampleCollectionSampleService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SampleCollectionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SampleMasterService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SavedMappingsService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="SavedReportSettingsService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="ScanCaseMasterService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ScanDetailService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="ScanlistService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="ScanProfileDetailService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="ScanProfileFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="ScanProfileService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="ScanResultService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="ScreenColumnsService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SearchChoicesService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="Service1.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="Service3.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="Service4.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="StateService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SublocationRefService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SubStoreService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SysInFlowRegistrationService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="SysInFlowUsageActionService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="SysInFlowUsageFieldService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="SysInFlowUsageService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="SysLastUpdateTimesService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="SysMetaDataService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="SysSavedLicensesService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="TableNameService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="TaskService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="TestDetailREFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="TestMastersService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="TestMasterTestTypeFacadeService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="TestOrderSetupService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="TestRequestDetailService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="TestResultService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="TestService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="TestTypeMasterService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="TextPickListService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="TransferService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="UnstockProductFacadeService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="UomRefService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="UpdatePriceSettingService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="UserFacadeService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="UserMenuItemsReportsService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="UserMenuItemsService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="UserPreferencesService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="UserService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorAddressService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="VendorAddressVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="VendorBalanceService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="VendorCollectionDetailsService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorCollectionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="VendorItemFacadeService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorItemService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorPaymentService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+    <File Include="VendorRatingDetailsService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="VendorRatingService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="VendorService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="VendorVersionService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="WardService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/26/2019 12:40:20</publishTime>
+    </File>
+    <File Include="WorkOrderAttachmentService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="WorkOrderLineService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="WorkOrderLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:17</publishTime>
+    </File>
+    <File Include="WorkOrderPickLineService.svc">
+      <publishTime>03/16/2017 10:19:23</publishTime>
+    </File>
+    <File Include="WorkOrderPickLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="WorkOrderPOService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="WorkOrderPutLineService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="WorkOrderPutLineVersionService.svc">
+      <publishTime>03/16/2017 10:19:24</publishTime>
+    </File>
+    <File Include="WorkOrderService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="WorkOrderStickyService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="WorkOrderStickyVersionService.svc">
+      <publishTime>03/16/2017 10:19:28</publishTime>
+    </File>
+    <File Include="WorkOrderVersionService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="WorkSheetDetailService.svc">
+      <publishTime>03/16/2017 10:19:29</publishTime>
+    </File>
+    <File Include="WorkSheetSampleFacadeService.svc">
+      <publishTime>03/16/2017 10:19:32</publishTime>
+    </File>
+    <File Include="WorkSheetService.svc">
+      <publishTime>03/16/2017 10:19:33</publishTime>
+    </File>
+    <File Include="XRayDetailsService.svc">
+      <publishTime>03/16/2017 10:19:21</publishTime>
+    </File>
+    <File Include="XRayResultFacadeService.svc">
+      <publishTime>03/16/2017 10:19:31</publishTime>
+    </File>
+    <File Include="XRayResultService.svc">
+      <publishTime>03/16/2017 10:19:25</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

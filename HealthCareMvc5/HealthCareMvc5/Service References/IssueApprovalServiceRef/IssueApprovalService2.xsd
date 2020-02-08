@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9084/IssueApprovalService.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" />
+  <xs:element name="Updateissueapproval">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objCompliantNO" nillable="true" type="q1:CompliantApproval" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateissueapprovalResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateissueapprovalResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListUpdate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objCompliantApproval" nillable="true" type="q2:ArrayOfCompliantApproval" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListUpdateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ListUpdateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMainPagebyUserID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageNO" type="xs:int" />
+        <xs:element minOccurs="0" name="RowperPage" type="xs:int" />
+        <xs:element minOccurs="0" name="UserID" type="xs:long" />
+        <xs:element minOccurs="0" name="ClientID" type="xs:int" />
+        <xs:element minOccurs="0" name="SearchText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListMainPagebyUserIDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListMainPagebyUserIDResult" nillable="true" type="q3:ArrayOfIssueApproval" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="clientList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UserID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="clientListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="clientListResult" nillable="true" type="q4:ArrayOfClientIssueRaise" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListGrid">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="objissueDtlID" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListGridResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListGridResult" nillable="true" type="q5:ArrayOfCompliantApproval" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

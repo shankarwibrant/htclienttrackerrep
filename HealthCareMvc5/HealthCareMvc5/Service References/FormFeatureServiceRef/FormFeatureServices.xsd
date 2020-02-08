@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:9084/FormFeatureServices.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" />
+  <xs:element name="formfeatureser">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formfeatureserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="formfeatureserResult" nillable="true" type="q1:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formfeaturemodser">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formfeaturemodserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="formfeaturemodserResult" nillable="true" type="q2:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formfeatureformser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="moduleid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="formfeatureformserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="formfeatureformserResult" nillable="true" type="q3:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cmbformser">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="cmbformserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="cmbformserResult" nillable="true" type="q4:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Createser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objtrans" nillable="true" type="q5:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CreateserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CreateserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListService">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="PageNo" type="xs:int" />
+        <xs:element minOccurs="0" name="RowsPerPage" type="xs:int" />
+        <xs:element minOccurs="0" name="SearchText" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListServiceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListServiceResult" nillable="true" type="q6:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Listchildser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Autoid" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ListchildserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="ListchildserResult" nillable="true" type="q7:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Updateser">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objtra" nillable="true" type="q8:ArrayOfFeature" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objformDeleteList" nillable="true" type="q9:ArrayOfFeature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UpdateserResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="UpdateserResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSer">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="id" type="xs:long" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteSerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteSerResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoIdSer">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="AutoIdSerResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AutoIdSerResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDtlFeat">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/HealthCareObjects.Client" minOccurs="0" name="objdelftr" nillable="true" type="q10:Feature" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DeleteDtlFeatResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DeleteDtlFeatResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

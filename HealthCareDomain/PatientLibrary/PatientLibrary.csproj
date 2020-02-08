@@ -1,0 +1,213 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{66122D9E-A0D0-4F4F-A3F8-C939983246FE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PatientLibrary</RootNamespace>
+    <AssemblyName>PatientLibrary</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\HealthCareServices\PatientServices\bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\..\HealthCareServices\PatientServices\bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <!--<Compile Include="DataAccess Facade\PatientBannerFacade.cs" />-->
+    <Compile Include="BusinessFlow\ClientIssueRaiseMgr.cs" />
+    <Compile Include="BusinessFlow\CompliantApprovalMgr.cs" />
+    <Compile Include="BusinessFlow\FormFeatureMgr.cs" />
+    <Compile Include="BusinessFlow\IssueApprovalMgr.cs" />
+    <Compile Include="BusinessFlow\LogInMgr.cs" />
+    <Compile Include="Common\DBOperations.cs" />
+    <Compile Include="Common\DataFactory.cs" />
+    <Compile Include="DataAccess\ClientIssueRaiseDA.cs" />
+    <Compile Include="DataAccess\ClientIssueRaiseDtlDA.cs" />
+    <Compile Include="DataAccess\CompliantApprovalDBOps.cs" />
+    <Compile Include="DataAccess\FormFeatureDBops.cs" />
+    <Compile Include="DataAccess\IssueApprovalDBOps.cs" />
+    <Compile Include="DataAccess\LogInDA.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\vssver2.scc" />
+    <None Include="vssver2.scc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="obj\Debug\TempPE\OpNewpatient.cs.dll" />
+    <Content Include="obj\Debug\TempPE\OPTRADoctorConsultingRepotrs.cs.dll" />
+    <Content Include="obj\Debug\TempPE\ResultEntry.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptAdmission.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptAllPatientReg.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptBedDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptChargeDetail.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptChargeDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptCollBillwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptCollDateWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptConsIPOPSegmentation.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDeptStatistics.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDiagDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDiagnosisDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDrDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDrNotSentCases.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDrSentCases.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDueDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptDueEntry.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptFinalBilling.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptFollowupDatewise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptInventoryBilling.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptInvoiceDoctorWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPAdmVsDischarge.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIpColl.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPCollection.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPDayCollection.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIpDueDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPOPSeg.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RPtIPOPSegments.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPPayStatus.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIpRegDate.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIpRegDischarge.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPRegDoctorWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPRegrDeptwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPSegmentation.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPTraDischargeRegister.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIpTraDoctorvsPatient.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptIPTraDoctorWiseFees.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptLabResultEntry.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptListOfProfiles.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpAllRegDate.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPBilling.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPColl.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpCollDRwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPCollection.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPCollectionDay.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpDiagnosisAreaWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPDuedetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPFollowupDeptwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPFollowupDrwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPInvoiceBilling.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpNewPatDept.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpNewPatDr.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpPatDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPPatientDiagnosis.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPPayStatus.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPRegDrWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPRegistration.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOPSegmentation.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptOpTraPatientWiseDoctorCollection.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptPatientDetails.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptPendingResultDeptwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptPendingResultNamewise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptPendingResultTestwise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptProfileReport.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptRegFeesColl.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptRepeatedPatientList.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptResultEntry.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptStatConsolidate.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptStatisticalReport.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptTestAnalysis.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptTestListDeptWise.cs.dll" />
+    <Content Include="obj\Debug\TempPE\RptTestListNamewise.cs.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="stdole">
+      <Guid>{00020430-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\HealthCareObjects\HealthCareObjects.csproj">
+      <Project>{E3405A85-1642-4267-974E-405165FD36DD}</Project>
+      <Name>HealthCareObjects</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

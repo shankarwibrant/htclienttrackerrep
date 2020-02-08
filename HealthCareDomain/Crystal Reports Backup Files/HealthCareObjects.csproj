@@ -1,0 +1,886 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E3405A85-1642-4267-974E-405165FD36DD}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HealthCareObjects</RootNamespace>
+    <AssemblyName>HealthCareObjects</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\HealthCareWeb\HMS\HealthCareRef\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <!--<Reference>
+
+
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+
+    </Reference>-->
+<<<<<<< .mine
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.Framework, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.Enterprise.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Enterprise.InfoStore, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.Enterprise.InfoStore.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.ReportAppServer.ClientDoc.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Web, Version=10.5.3700.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\HealthCareWeb\HMS\HealthCareRef\CrystalDecisions.Web.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Build.Engine" />
+=======
+
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportAppServer.ClientDoc, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+
+>>>>>>> .r9125
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Web, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.Build.Engine" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseClass.cs" />
+    <Compile Include="CrystalDecisions.cs" />
+    <Compile Include="EMailObjects\EMail.cs" />
+    <Compile Include="Exceptions.cs" />
+    <Compile Include="IDGeneration.cs" />
+    <Compile Include="InventoryFacade\DirectSalesProductFacade.cs" />
+    <Compile Include="InventoryFacade\ProductDirectPurchaseFacade.cs" />
+    <Compile Include="InventoryFacade\PurchaseDueEntryFacade.cs" />
+    <Compile Include="InventoryFacade\PurchaseOrderFacade.cs" />
+    <Compile Include="Inventory\Generic.cs" />
+    <Compile Include="Inventory\IndentInwardDetails.cs" />
+    <Compile Include="Inventory\IndentInwards.cs" />
+    <Compile Include="Inventory\IndentOutwards.cs" />
+    <Compile Include="Inventory\IndentOutwardDetails.cs" />
+    <Compile Include="Inventory\IndentRequestDetails.cs" />
+    <Compile Include="InventoryFacade\CustomerBalanceFacade.cs" />
+    <Compile Include="InventoryFacade\PurchaseReturnFacade.cs" />
+    <Compile Include="InventoryFacade\ReOrderStockFacade.cs" />
+    <Compile Include="InventoryFacade\SalesReturnCustomerFacade.cs" />
+    <Compile Include="InventoryFacade\SalesReturnProductFacade.cs" />
+    <Compile Include="InventoryFacade\VendorItemFacade.cs" />
+    <Compile Include="Inventory\AccessGroup.cs" />
+    <Compile Include="Inventory\AccessGroupRights.cs" />
+    <Compile Include="Inventory\BaseUser.cs" />
+    <Compile Include="Inventory\BillOfMaterial.cs" />
+    <Compile Include="Inventory\Category.cs" />
+    <Compile Include="Inventory\Company.cs" />
+    <Compile Include="Inventory\CountSheet.cs" />
+    <Compile Include="Inventory\CountSheetAttachment.cs" />
+    <Compile Include="Inventory\CountSheetLine.cs" />
+    <Compile Include="Inventory\CountSheetLineVersion.cs" />
+    <Compile Include="Inventory\CountSheetSticky.cs" />
+    <Compile Include="Inventory\CountSheetStickyVersion.cs" />
+    <Compile Include="Inventory\CountSheetVersion.cs" />
+    <Compile Include="Inventory\Customer.cs" />
+    <Compile Include="Inventory\CustomerAddress.cs" />
+    <Compile Include="Inventory\CustomerAddressVersion.cs" />
+    <Compile Include="Inventory\CustomerAttachment.cs" />
+    <Compile Include="Inventory\CustomerBalance.cs" />
+    <Compile Include="Inventory\CustomerVersion.cs" />
+    <Compile Include="Inventory\DummyCurrentQtyAdjustment.cs" />
+    <Compile Include="Inventory\DummyCurrentQtyAdjustmentLine.cs" />
+    <Compile Include="Inventory\DummyPriceAdjustment.cs" />
+    <Compile Include="Inventory\DummyPriceAdjustmentLine.cs" />
+    <Compile Include="Inventory\DummyReorderStock.cs" />
+    <Compile Include="Inventory\DummyReorderStockLine.cs" />
+    <Compile Include="Inventory\DummyStockAdjustment.cs" />
+    <Compile Include="Inventory\DummyStockAdjustmentLine.cs" />
+    <Compile Include="Inventory\DummyStockTransfer.cs" />
+    <Compile Include="Inventory\DummyStockTransferLine.cs" />
+    <Compile Include="Inventory\FileAttachment.cs" />
+    <Compile Include="Inventory\ForumMessage.cs" />
+    <Compile Include="Inventory\GlobalActiveUsers.cs" />
+    <Compile Include="Inventory\GlobalCompanyPreferences.cs" />
+    <Compile Include="Inventory\GlobalCurrency.cs" />
+    <Compile Include="Inventory\GlobalCustomFields.cs" />
+    <Compile Include="Inventory\GlobalDefaults.cs" />
+    <Compile Include="Inventory\GlobalDocNoFormat.cs" />
+    <Compile Include="Inventory\GlobalLanguage.cs" />
+    <Compile Include="Inventory\GlobalResource.cs" />
+    <Compile Include="Inventory\GlobalSublocation.cs" />
+    <Compile Include="Inventory\IndentRequest.cs" />
+    <Compile Include="Inventory\Inventories.cs" />
+    <Compile Include="Inventory\Inventory.cs" />
+    <Compile Include="Inventory\Inventorybilling.cs" />
+    <Compile Include="Inventory\InventoryCost.cs" />
+    <Compile Include="Inventory\InventoryCostLogBatch.cs" />
+    <Compile Include="Inventory\InventoryCostLogDetail.cs" />
+    <Compile Include="Inventory\InventoryLogBatch.cs" />
+    <Compile Include="Inventory\InventoryLogDetail.cs" />
+    <Compile Include="Inventory\InventoryQuantityTotal.cs" />
+    <Compile Include="Inventory\ItemBom.cs" />
+    <Compile Include="Inventory\ItemBomVersion.cs" />
+    <Compile Include="Inventory\ItemPrice.cs" />
+    <Compile Include="Inventory\ItemPriceVersion.cs" />
+    <Compile Include="Inventory\ItemTaxCode.cs" />
+    <Compile Include="Inventory\Location.cs" />
+    <Compile Include="Inventory\MainStoreSubstore.cs" />
+    <Compile Include="Inventory\Manufacturer.cs" />
+    <Compile Include="Inventory\OpenStock.cs" />
+    <Compile Include="Inventory\OpenStocks.cs" />
+    <Compile Include="Inventory\OrderTaxCode.cs" />
+    <Compile Include="Inventory\OverviewInFlowMessages.cs" />
+    <Compile Include="Inventory\OverviewInFlowMessagesUser.cs" />
+    <Compile Include="Inventory\PaymentMode.cs" />
+    <Compile Include="Inventory\PaymentTerms.cs" />
+    <Compile Include="Inventory\PersonalPreferences.cs" />
+    <Compile Include="Inventory\PricingScheme.cs" />
+    <Compile Include="Inventory\PrintedDocumentColumns.cs" />
+    <Compile Include="Inventory\Product.cs" />
+    <Compile Include="Inventory\ProductAttachment.cs" />
+    <Compile Include="Inventory\ProductType.cs" />
+    <Compile Include="Inventory\ProductVersion.cs" />
+    <Compile Include="Inventory\PurchaseDueEntry.cs" />
+    <Compile Include="Inventory\PurchaseOrder.cs" />
+    <Compile Include="Inventory\PurchaseOrderAttachment.cs" />
+    <Compile Include="Inventory\PurchaseOrderLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderLineVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderPaymentLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderPaymentLineVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderReceiveLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderReceiveLineVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderReturnLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderReturnLineVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderReturnTrackLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderSticky.cs" />
+    <Compile Include="Inventory\PurchaseOrderStickyVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderUnstockLine.cs" />
+    <Compile Include="Inventory\PurchaseOrderUnstockLineVersion.cs" />
+    <Compile Include="Inventory\PurchaseOrderVersion.cs" />
+    <Compile Include="Inventory\ReceivingAddress.cs" />
+    <Compile Include="Inventory\ReportCustomization.cs" />
+    <Compile Include="Inventory\ReturnToMainStore.cs" />
+    <Compile Include="Inventory\SalesDueEntry.cs" />
+    <Compile Include="Inventory\SalesOrder.cs" />
+    <Compile Include="Inventory\SalesOrderAttachment.cs" />
+    <Compile Include="Inventory\SalesOrderInvoiceLine.cs" />
+    <Compile Include="Inventory\SalesOrderInvoiceLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderInvoiceSalesOrderList.cs" />
+    <Compile Include="Inventory\SalesOrderLine.cs" />
+    <Compile Include="Inventory\SalesOrderLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderPackLine.cs" />
+    <Compile Include="Inventory\SalesOrderPackLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderPickLine.cs" />
+    <Compile Include="Inventory\SalesOrderPickLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderPickProductQtylist.cs" />
+    <Compile Include="Inventory\SalesOrderProductQtyList.cs" />
+    <Compile Include="Inventory\SalesOrderRestockLine.cs" />
+    <Compile Include="Inventory\SalesOrderRestockLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderReturnLine.cs" />
+    <Compile Include="Inventory\SalesOrderReturnLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderReturnTrackLine.cs" />
+    <Compile Include="Inventory\SalesOrderShipContainer.cs" />
+    <Compile Include="Inventory\SalesOrderShipContainerVersion.cs" />
+    <Compile Include="Inventory\SalesOrderShipLine.cs" />
+    <Compile Include="Inventory\SalesOrderShipLineVersion.cs" />
+    <Compile Include="Inventory\SalesOrderSticky.cs" />
+    <Compile Include="Inventory\SalesOrderStickyVersion.cs" />
+    <Compile Include="Inventory\SalesOrderVersion.cs" />
+    <Compile Include="Inventory\SalesRepRef.cs" />
+    <Compile Include="Inventory\SavedMappings.cs" />
+    <Compile Include="Inventory\SavedReportSettings.cs" />
+    <Compile Include="Inventory\ScreenColumns.cs" />
+    <Compile Include="Inventory\SearchChoices.cs" />
+    <Compile Include="Inventory\SublocationRef.cs" />
+    <Compile Include="Inventory\SubStore.cs" />
+    <Compile Include="Inventory\SysInFlowRegistration.cs" />
+    <Compile Include="Inventory\SysInFlowUsage.cs" />
+    <Compile Include="Inventory\SysInFlowUsageAction.cs" />
+    <Compile Include="Inventory\SysInFlowUsageField.cs" />
+    <Compile Include="Inventory\SysLastUpdateTimes.cs" />
+    <Compile Include="Inventory\SysMetaData.cs" />
+    <Compile Include="Inventory\SysSavedLicenses.cs" />
+    <Compile Include="Inventory\Test.cs" />
+    <Compile Include="Inventory\CarrierRef.cs" />
+    <Compile Include="Inventory\CaseConversionExceptions.cs" />
+    <Compile Include="Inventory\CountryStateCityRef.cs" />
+    <Compile Include="Inventory\Forum.cs" />
+    <Compile Include="Inventory\PaymentMethodRef.cs" />
+    <Compile Include="Inventory\UomRef.cs" />
+    <Compile Include="Inventory\UserMenuItems.cs" />
+    <Compile Include="Inventory\UserMenuItemsReports.cs" />
+    <Compile Include="Inventory\UserPreferences.cs" />
+    <Compile Include="Inventory\UserRights.cs" />
+    <Compile Include="Inventory\Vendor.cs" />
+    <Compile Include="Inventory\VendorAddress.cs" />
+    <Compile Include="Inventory\VendorAddressVersion.cs" />
+    <Compile Include="Inventory\VendorAttachment.cs" />
+    <Compile Include="Inventory\VendorBalance.cs" />
+    <Compile Include="Inventory\VendorItem.cs" />
+    <Compile Include="Inventory\VendorVersion.cs" />
+    <Compile Include="Inventory\WorkOrder.cs" />
+    <Compile Include="Inventory\WorkOrderAttachment.cs" />
+    <Compile Include="Inventory\WorkOrderLine.cs" />
+    <Compile Include="Inventory\WorkOrderLineVersion.cs" />
+    <Compile Include="Inventory\WorkOrderPickLine.cs" />
+    <Compile Include="Inventory\WorkOrderPickLineVersion.cs" />
+    <Compile Include="Inventory\WorkOrderPutLine.cs" />
+    <Compile Include="Inventory\WorkOrderPutLineVersion.cs" />
+    <Compile Include="Inventory\WorkOrderSticky.cs" />
+    <Compile Include="Inventory\WorkOrderStickyVersion.cs" />
+    <Compile Include="Inventory\WorkOrderVersion.cs" />
+    <Compile Include="LabFacade\InvoiceDetailFacades.cs" />
+    <Compile Include="LabFacade\InvoiceFacades.cs" />
+    <Compile Include="LabFacade\InvoiceProfileFacade.cs" />
+    <Compile Include="LabFacade\Invoice_TestDetailFacade.cs" />
+    <Compile Include="LabFacade\PatientREStatusFacade.cs" />
+    <Compile Include="LabFacade\PickListDetailsFacade.cs" />
+    <Compile Include="LabFacade\PicklistFacade.cs" />
+    <Compile Include="LabFacade\PicklistTestFacade.cs" />
+    <Compile Include="LabFacade\ProfileMasterDetailFacade.cs" />
+    <Compile Include="LabFacade\ProfileMasterFacades.cs" />
+    <Compile Include="LabFacade\ResultEntryMfTestFacade.cs" />
+    <Compile Include="LabFacade\ResultEntryPatientFacade.cs" />
+    <Compile Include="LabFacade\ResultEntryTestDetailFacade.cs" />
+    <Compile Include="LabFacade\SampleCollectionPatientFacade.cs" />
+    <Compile Include="LabFacade\SampleCollectionSamplesFacade.cs" />
+    <Compile Include="LabFacade\ScanProfileFacade.cs" />
+    <Compile Include="LabFacade\TestMasterTestTypeFacade.cs" />
+    <Compile Include="LabFacade\WorkSheetSampleFacade.cs" />
+    <Compile Include="LabFacade\XrayResultFacade.cs" />
+    <Compile Include="Lab\Blood.cs" />
+    <Compile Include="Lab\Department.cs" />
+    <Compile Include="Lab\DepartmentMaster.cs" />
+    <Compile Include="Lab\GlucoseTest.cs" />
+    <Compile Include="Lab\InvoiceDetail.cs" />
+    <Compile Include="Lab\InvoiceProfile.cs" />
+    <Compile Include="Lab\Invoices.cs" />
+    <Compile Include="Lab\InvoiceType.cs" />
+    <Compile Include="Lab\LabDueEntry.cs" />
+    <Compile Include="Lab\MultiFieldTests.cs" />
+    <Compile Include="Lab\Picklist.cs" />
+    <Compile Include="Lab\Picklists.cs" />
+    <Compile Include="Lab\PicklistDetail.cs" />
+    <Compile Include="Lab\ProfileMaster.cs" />
+    <Compile Include="Lab\ProfileMasterDetail.cs" />
+    <Compile Include="Lab\ProfileMasters.cs" />
+    <Compile Include="Lab\ProfileMastersDetail.cs" />
+    <Compile Include="Lab\ResultEntry.cs" />
+    <Compile Include="Lab\ResultEntrys.cs" />
+    <Compile Include="Lab\ResultEntryDetail.cs" />
+    <Compile Include="Lab\SampleCollection.cs" />
+    <Compile Include="Lab\Samples.cs" />
+    <Compile Include="Lab\ScanCaseMaster.cs" />
+    <Compile Include="Lab\ScanCaseMasters.cs" />
+    <Compile Include="Lab\ScanDetail.cs" />
+    <Compile Include="Lab\ScanProfile.cs" />
+    <Compile Include="Lab\ScanProfiles.cs" />
+    <Compile Include="Lab\ScanProfileDetail.cs" />
+    <Compile Include="Lab\ScanResults.cs" />
+    <Compile Include="Lab\TestMasters.cs" />
+    <Compile Include="Lab\TestOrderSetup.cs" />
+    <Compile Include="Lab\TestRequestDetail.cs" />
+    <Compile Include="Lab\TestType.cs" />
+    <Compile Include="Lab\TextPicklist.cs" />
+    <Compile Include="Lab\WorkSheet.cs" />
+    <Compile Include="Lab\WorkSheetDetail.cs" />
+    <Compile Include="Lab\XRayDetails.cs" />
+    <Compile Include="Lab\XrayResult.cs" />
+    <Compile Include="Inventory\MainStore.cs" />
+    <Compile Include="Panel\BedMatrix.cs" />
+    <Compile Include="Panel\BedMatrixCharge.cs" />
+    <Compile Include="Panel\BedMatrixchild.cs" />
+    <Compile Include="Panel\BedMatrixMaster.cs" />
+    <Compile Include="Panel\BedMatrixWard.cs" />
+    <Compile Include="Panel\DiscountApproval.cs" />
+    <Compile Include="Panel\DispatchClaim.cs" />
+    <Compile Include="Panel\EnRequestApproval.cs" />
+    <Compile Include="Panel\EnRequestEntry.cs" />
+    <Compile Include="Panel\LOANew.cs" />
+    <Compile Include="Panel\panel.cs" />
+    <Compile Include="Panel\PreAuthApproval.cs" />
+    <Compile Include="Panel\PreAuthEntry.cs" />
+    <Compile Include="patientFacade\InPatientFacade\AdmissionFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\BedFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\CaseSheetStatusFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\FinalBillDetailFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\FinalBillFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPBillingFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPBillStatusFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPDischargeSummaryFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPDueEntryFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPFinalDiagnosisFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPOPSegmantationFacade.cs" />
+    <Compile Include="patientFacade\InPatientFacade\IPPatientFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\ChargesFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\DepartmentTestFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\DoctorDetailFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OPBillingDetailFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OPCaseSheetPatientFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OPDueEntryFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OPFinalDiagnosisFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OPPolicyFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\OutPatientFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\PatientDetailFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\PatientFacade.cs" />
+    <Compile Include="patientFacade\OPFacade\RegistrationFacade.cs" />
+    <Compile Include="patientFacade\PatientBannerFacade.cs" />
+    <Compile Include="Patient\InPatient\BedStatus.cs" />
+    <Compile Include="Patient\OutPatient\casesheetnew.cs" />
+    <Compile Include="Patient\OutPatient\CasesheetPrescriptionDetails.cs" />
+    <Compile Include="Patient\OutPatient\ChargeType.cs" />
+    <Compile Include="Patient\OutPatient\Diabetes.cs" />
+    <Compile Include="Patient\InPatient\Admission.cs" />
+    <Compile Include="Patient\InPatient\Bed.cs" />
+    <Compile Include="Patient\InPatient\BedCharge.cs" />
+    <Compile Include="Patient\InPatient\BillStatus.cs" />
+    <Compile Include="Patient\InPatient\BillStatuses.cs" />
+    <Compile Include="Patient\InPatient\CountIPBillStatus.cs" />
+    <Compile Include="Patient\InPatient\DischargeHeader.cs" />
+    <Compile Include="Patient\InPatient\DischargeHeaderDetail.cs" />
+    <Compile Include="Patient\InPatient\DischargeSummary.cs" />
+    <Compile Include="Patient\InPatient\DischargeSummaryDetail.cs" />
+    <Compile Include="Patient\InPatient\FinalBill.cs" />
+    <Compile Include="Patient\InPatient\FinalBillDetail.cs" />
+    <Compile Include="Patient\InPatient\FinalDiagnosis.cs" />
+    <Compile Include="Patient\InPatient\FinalDiagnosisDetail.cs" />
+    <Compile Include="Patient\InPatient\IPBedTransfer.cs" />
+    <Compile Include="Patient\InPatient\IPBill.cs" />
+    <Compile Include="Patient\InPatient\IPBillDetail.cs" />
+    <Compile Include="Patient\InPatient\IPCaseSheet.cs" />
+    <Compile Include="Patient\InPatient\IPCaseSheetHistory.cs" />
+    <Compile Include="Patient\InPatient\IPCaseSheetPatient.cs" />
+    <Compile Include="Patient\InPatient\IPDueEntry.cs" />
+    <Compile Include="Patient\InPatient\IPDueEntrys.cs" />
+    <Compile Include="Patient\InPatient\IPFinalDiagnosis.cs" />
+    <Compile Include="Patient\InPatient\IPFinalDiagnosisDetail.cs" />
+    <Compile Include="Patient\InPatient\IPPatientMedicalCaseSheetHistory.cs" />
+    <Compile Include="Patient\InPatient\IPPatientSurgicalCaseSheetHistory.cs" />
+    <Compile Include="Patient\InPatient\Ward.cs" />
+    <Compile Include="Patient\OutPatient\Appointment.cs" />
+    <Compile Include="Patient\OutPatient\Area.cs" />
+    <Compile Include="Patient\OutPatient\Charges.cs" />
+    <Compile Include="Patient\OutPatient\City.cs" />
+    <Compile Include="Patient\OutPatient\Country.cs" />
+    <Compile Include="Patient\OutPatient\Diagnosis.cs" />
+    <Compile Include="Patient\OutPatient\DiscountAuthority.cs" />
+    <Compile Include="Patient\OutPatient\DiscountType.cs" />
+    <Compile Include="Patient\OutPatient\Doctor.cs" />
+    <Compile Include="Patient\OutPatient\DoctorDepartment.cs" />
+    <Compile Include="Patient\OutPatient\DoctorDetail.cs" />
+    <Compile Include="Patient\OutPatient\DoctorVisitTimings.cs" />
+    <Compile Include="Patient\OutPatient\Dosage.cs" />
+    <Compile Include="Patient\OutPatient\FinalDiagnosis.cs" />
+    <Compile Include="Patient\OutPatient\FinalDiagnosisDetail.cs" />
+    <Compile Include="Patient\OutPatient\NewDoctorVisitTimeDetail.cs" />
+    <Compile Include="Patient\OutPatient\NewDoctorVistingTime.cs" />
+    <Compile Include="Patient\OutPatient\Occupations.cs" />
+    <Compile Include="Patient\OutPatient\OPBilling.cs" />
+    <Compile Include="Patient\OutPatient\OPBillingDetail.cs" />
+    <Compile Include="Patient\OutPatient\OPCaseSheet.cs" />
+    <Compile Include="Patient\OutPatient\OPCaseSheetDiagnosis.cs" />
+    <Compile Include="Patient\OutPatient\OPCaseSheetDrug.cs" />
+    <Compile Include="Patient\OutPatient\OPCaseSheetTest.cs" />
+    <Compile Include="Patient\OutPatient\OPDueEntry.cs" />
+    <Compile Include="Patient\OutPatient\OPPatientMedicalCaseSheetHistory.cs" />
+    <Compile Include="Patient\OutPatient\OPPatientSurgicalCaseSheetHistory.cs" />
+    <Compile Include="Patient\OutPatient\OPPolicy.cs" />
+    <Compile Include="Patient\OutPatient\OPPrescriptionMasterDetail.cs" />
+    <Compile Include="Patient\OutPatient\OPPrescriptionMasterSl.cs" />
+    <Compile Include="Patient\OutPatient\PatientDetail.cs" />
+    <Compile Include="Patient\OutPatient\Prescription.cs" />
+    <Compile Include="Patient\OutPatient\PrescriptionDetail.cs" />
+    <Compile Include="Patient\OutPatient\PrescriptionMaster.cs" />
+    <Compile Include="Patient\OutPatient\PrescriptionProfile.cs" />
+    <Compile Include="Patient\OutPatient\PrescriptionProfileDetail.cs" />
+    <Compile Include="Patient\OutPatient\PrescriptionTimings.cs" />
+    <Compile Include="Patient\OutPatient\Receipt.cs" />
+    <Compile Include="Patient\OutPatient\ReferenceDoctor.cs" />
+    <Compile Include="Patient\OutPatient\Refund.cs" />
+    <Compile Include="Patient\OutPatient\Registration.cs" />
+    <Compile Include="Patient\OutPatient\RegistrationFee.cs" />
+    <Compile Include="Patient\OutPatient\State.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RptChargeDetail1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptChargeDetail.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptConsolidatedCollectionReportWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptConsolidatedCollectionReportWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptCreditBillCollectionReportWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptCreditBillCollectionReportWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptDeptWiseRequisition .cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDeptWiseRequisition .rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptDrugSlesList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptDrugSlesList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryBilling.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryBilling.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryCashColl1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryCashColl.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryDrugExpiry1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryDrugExpiry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryItemWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryItemWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryMovementAnalysis1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryMovementAnalysis.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryPurchase1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryPurchase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryPurchaseReturn1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryPurchaseReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventorySales1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventorySales.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventorySalesReturn1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventorySalesReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryTotalMovingDrugs1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryTotalMovingDrugs.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInventoryTotalStock1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInventoryTotalStock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptInvPurchaseBill1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptInvPurchaseBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptIPRegistrationDrWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptIPRegistrationDrWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportDepartmentWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportDepartmentWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportLedgerWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportLedgerWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportManufacturer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportManufacturer.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportReorderList.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportReorderList.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportTotalItemWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportTotalItemWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptItemReportUomWise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptItemReportUomWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptLabResult1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLabResult.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptLabResultEntry1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptLabResultEntry.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptOPRegConsultingFee1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptOPRegConsultingFee.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptPrescriptionRegister.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptPrescriptionRegister.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptReciptnumberwise.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptReciptnumberwise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSample.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSample.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptScheduleDrug1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptScheduleDrug.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptStockPurchaseReturn.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptStockPurchaseReturn.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSupplierWisePurchase.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSupplierWisePurchase.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptSurgicalListWithoutStock.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptSurgicalListWithoutStock.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptTotalStockMainStoreItemWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTotalStockMainStoreItemWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RptTotalStockSubStoreItemWise1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>RptTotalStockSubStoreItemWise.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="UserRights\Entity.cs" />
+    <Compile Include="UserRights\EntityAccessRight.cs" />
+    <Compile Include="UserRights\EntityUser.cs" />
+    <Compile Include="UserRights\ModuleType.cs" />
+    <Compile Include="UserRights\Role.cs" />
+    <Compile Include="UserRights\RoleProfile.cs" />
+    <Compile Include="UserRights\User.cs" />
+    <Compile Include="VibrantExceptions.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptChargeDetail.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptChargeDetail1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptConsolidatedCollectionReportWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptConsolidatedCollectionReportWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptCreditBillCollectionReportWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptCreditBillCollectionReportWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDeptWiseRequisition .rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDeptWiseRequisition .cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptDrugSlesList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptDrugSlesList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryBilling.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryBilling.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryCashColl.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryCashColl1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryDrugExpiry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryDrugExpiry1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryItemWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryItemWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryMovementAnalysis.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryMovementAnalysis1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryPurchase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryPurchase1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryPurchaseReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryPurchaseReturn1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventorySales.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventorySales1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventorySalesReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventorySalesReturn1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryTotalMovingDrugs.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryTotalMovingDrugs1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInventoryTotalStock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInventoryTotalStock1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptInvPurchaseBill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptInvPurchaseBill1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptIPRegistrationDrWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptIPRegistrationDrWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportDepartmentWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportDepartmentWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportLedgerWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportLedgerWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportManufacturer.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportManufacturer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportReorderList.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportReorderList.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportTotalItemWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportTotalItemWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptItemReportUomWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptItemReportUomWise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLabResult.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLabResult1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptLabResultEntry.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptLabResultEntry1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptOPRegConsultingFee.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptOPRegConsultingFee1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptPrescriptionRegister.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptPrescriptionRegister.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptReciptnumberwise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptReciptnumberwise.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSample.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSample.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptScheduleDrug.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptScheduleDrug1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptStockPurchaseReturn.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptStockPurchaseReturn.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSupplierWisePurchase.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSupplierWisePurchase.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptSurgicalListWithoutStock.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptSurgicalListWithoutStock.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTotalStockMainStoreItemWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTotalStockMainStoreItemWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RptTotalStockSubStoreItemWise.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>RptTotalStockSubStoreItemWise1.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{967B4E0D-AD0C-4609-AB67-0FA40C0206D8}" />
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="HealthCareObjects.csproj.vspscc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
