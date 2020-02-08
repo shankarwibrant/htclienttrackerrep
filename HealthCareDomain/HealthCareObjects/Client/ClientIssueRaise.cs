@@ -26,6 +26,7 @@ namespace HealthCareObjects.Client
         private Int64 _git;
         private Int64 _totalRecords;
         private string _FullName;
+        private string _FullName1;
         private string _cIssueID;
         private Int64 _ContactNo;
         private string _EmailId;
