@@ -15,6 +15,7 @@ namespace HealthCareObjects.Client
         private string _issueDescription;
         private Int64 _issueID;
         private Int64 _issueID1;
+        private Int64 _issueid2;
         private Int64 _activeflage;
         private Int64 _createdBy;
         private DateTime _createdDate;
