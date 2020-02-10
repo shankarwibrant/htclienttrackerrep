@@ -232,3 +232,12 @@ D:\SIM\ClientIssueSourceRep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthC
 D:\SIM\ClientIssueSourceRep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.csproj.CopyComplete
 D:\SIM\ClientIssueSourceRep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.dll
 D:\SIM\ClientIssueSourceRep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.pdb
+D:\SIM\htclienttrackerrep\HealthCareMvc5\HealthCareMvc5\HeathCareRef\HealthCareObjects.dll
+D:\SIM\htclienttrackerrep\HealthCareMvc5\HealthCareMvc5\HeathCareRef\HealthCareObjects.pdb
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.csprojAssemblyReference.cache
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.Properties.Resources.resources
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.csproj.GenerateResource.cache
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.csproj.CoreCompileInputs.cache
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.csproj.CopyComplete
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.dll
+D:\SIM\htclienttrackerrep\HealthCareDomain\HealthCareObjects\obj\Debug\HealthCareObjects.pdb

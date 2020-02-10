@@ -277,3 +277,15 @@ D:\SIM\ClientIssueSourceRep\HealthCareServices\PatientServices\obj\Debug\Patient
 D:\SIM\ClientIssueSourceRep\HealthCareServices\PatientServices\bin\HealthCareObjects.pdb
 D:\SIM\ClientIssueSourceRep\HealthCareServices\PatientServices\bin\PatientLibrary.pdb
 D:\SIM\ClientIssueSourceRep\HealthCareServices\PatientServices\bin\PatientLibrary.dll.config
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\PatientServices.dll.config
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\PatientServices.dll
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\PatientServices.pdb
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\Newtonsoft.Json.dll
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\HealthCareObjects.pdb
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\PatientLibrary.pdb
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\bin\PatientLibrary.dll.config
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\obj\Debug\PatientServices.csprojAssemblyReference.cache
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\obj\Debug\PatientServices.csproj.CoreCompileInputs.cache
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\obj\Debug\PatientServices.csproj.CopyComplete
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\obj\Debug\PatientServices.dll
+D:\SIM\htclienttrackerrep\HealthCareServices\PatientServices\obj\Debug\PatientServices.pdb

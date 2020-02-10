@@ -11,6 +11,7 @@ namespace HealthCareObjects.Client
         #region PrivateMember
 
         private string _FeatureName;
+        private string _FeatureNames;
         private Int64 _productID;
         private Int64 _issueDetailID;
         private string _issueDescription;
