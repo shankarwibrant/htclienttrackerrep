@@ -25,6 +25,7 @@ namespace HealthCareObjects.Client
         private DateTime? _issueDate;
         private Int64 _git;
         private Int64 _git1;
+        private Int64 _git2;
         private Int64 _totalRecords;
         private string _FullName;
         private string _FullName1;
